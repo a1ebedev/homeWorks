@@ -8,6 +8,18 @@ body {
   font-size: 10px;
 }
 
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.text-align-right {
+  text-align: right;
+}
+
 /* ---Header menu--- */
 .menu {
   background: black;
@@ -57,4 +69,42 @@ body {
 
 .menu__button a:hover > .menu__button-icon {
   border-color: #91aef5;
+}
+
+/* ---Information panel--- */
+.information__block {
+  margin: 40px 0 0 0px;
+  width: 60%;
+}
+
+.information__block:nth-child(1) {
+  margin-left: 0px;
+}
+.information__block:nth-child(2n) {
+  width: 35%;
+}
+
+.information__text {
+  font-size: 10px;
+  line-height: 10px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, .5);
+  width: 78%;
+}
+
+.information__text strong {
+  font-size: 15px;
+  line-height: 18px;
+  color: black;
+  display: block;
+}
+
+.information__icon {
+  width: 18%;
+}
+.information__logo {
+  background: url(../img/head-logo.png) #F3F3F3 center no-repeat;
+  background-size: 80%;
+  height: 105px;
+  width: 199px;
 }
