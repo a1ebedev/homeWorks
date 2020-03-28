@@ -88,7 +88,7 @@ body {
   font-size: 10px;
   line-height: 10px;
   font-weight: bold;
-  color: rgba(0, 0, 0, .5);
+  color: rgba(0, 0, 0, 0.5);
   width: 78%;
 }
 
@@ -103,8 +103,34 @@ body {
   width: 18%;
 }
 .information__logo {
-  background: url(../img/head-logo.png) #F3F3F3 center no-repeat;
+  background: url(../img/head-logo.png) #f3f3f3 center no-repeat;
   background-size: 80%;
   height: 105px;
   width: 199px;
+}
+
+/* ---Categories panel--- */
+.categories {
+  border-top: 1px solid rgba(234, 235, 237, 0.6);
+  font-size: 11px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.categories li {
+  display: inline;
+  float: left;
+  text-align: center;
+  margin-top: 23px;
+  margin-left: 80.5px;
+}
+
+.categories li a {
+  color: black;
+}
+.categories li:nth-child(1) {
+  margin-left: 0;
+}
+.categories__icon {
+  margin-bottom: 14.1px;
 }
