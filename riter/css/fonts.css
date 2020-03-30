@@ -1,125 +1,126 @@
 @font-face {
-	font-family: 'Gotham Pro';
-	src: url('../fonts/GothamPro-Medium.eot');
-	src: local('Gotham Pro Medium'), local('GothamPro-Medium'),
-		url('../fonts/GothamPro-Medium.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/GothamPro-Medium.woff') format('woff'),
-		url('../fonts/GothamPro-Medium.ttf') format('truetype');
-	font-weight: 500;
-	font-style: normal;
+  font-family: "Gotham Pro";
+  src: url("../fonts/GothamPro-Medium.eot");
+  src: local("Gotham Pro Medium"), local("GothamPro-Medium"),
+    url("../fonts/GothamPro-Medium.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/GothamPro-Medium.woff") format("woff"),
+    url("../fonts/GothamPro-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
 }
 
 @font-face {
-	font-family: 'Gotham Pro';
-	src: url('../fonts/GothamPro-Bold.eot');
-	src: local('Gotham Pro Bold'), local('GothamPro-Bold'),
-		url('../fonts/GothamPro-Bold.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/GothamPro-Bold.woff') format('woff'),
-		url('../fonts/GothamPro-Bold.ttf') format('truetype');
-	font-weight: bold;
-	font-style: normal;
+  font-family: "Gotham Pro";
+  src: url("../fonts/GothamPro-Bold.eot");
+  src: local("Gotham Pro Bold"), local("GothamPro-Bold"),
+    url("../fonts/GothamPro-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/GothamPro-Bold.woff") format("woff"),
+    url("../fonts/GothamPro-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
 }
 
 @font-face {
-	font-family: 'Gotham Pro Narrow';
-	src: url('../fonts/GothamProNarrow-Bold.eot');
-	src: local('Gotham Pro Narrow Bold'), local('GothamProNarrow-Bold'),
-		url('../fonts/GothamProNarrow-Bold.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/GothamProNarrow-Bold.woff') format('woff'),
-		url('../fonts/GothamProNarrow-Bold.ttf') format('truetype');
-	font-weight: bold;
-	font-style: normal;
+  font-family: "Gotham Pro Narrow";
+  src: url("../fonts/GothamProNarrow-Bold.eot");
+  src: local("Gotham Pro Narrow Bold"), local("GothamProNarrow-Bold"),
+    url("../fonts/GothamProNarrow-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/GothamProNarrow-Bold.woff") format("woff"),
+    url("../fonts/GothamProNarrow-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
 }
 
 @font-face {
-	font-family: 'Gotham Pro Narrow';
-	src: url('../fonts/GothamProNarrow-Medium.eot');
-	src: local('Gotham Pro Narrow Medium'), local('GothamProNarrow-Medium'),
-		url('../fonts/GothamProNarrow-Medium.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/GothamProNarrow-Medium.woff') format('woff'),
-		url('../fonts/GothamProNarrow-Medium.ttf') format('truetype');
-	font-weight: 500;
-	font-style: normal;
+  font-family: "Gotham Pro Narrow";
+  src: url("../fonts/GothamProNarrow-Medium.eot");
+  src: local("Gotham Pro Narrow Medium"), local("GothamProNarrow-Medium"),
+    url("../fonts/GothamProNarrow-Medium.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/GothamProNarrow-Medium.woff") format("woff"),
+    url("../fonts/GothamProNarrow-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
 }
 
 @font-face {
-	font-family: 'Gotham Pro';
-	src: url('../fonts/GothamPro-Light.eot');
-	src: local('Gotham Pro Light'), local('GothamPro-Light'),
-		url('../fonts/GothamPro-Light.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/GothamPro-Light.woff') format('woff'),
-		url('../fonts/GothamPro-Light.ttf') format('truetype');
-	font-weight: 300;
-	font-style: normal;
+  font-family: "Gotham Pro";
+  src: url("../fonts/GothamPro-Light.eot");
+  src: local("Gotham Pro Light"), local("GothamPro-Light"),
+    url("../fonts/GothamPro-Light.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/GothamPro-Light.woff") format("woff"),
+    url("../fonts/GothamPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
 }
 
 @font-face {
-	font-family: 'Gotham Pro';
-	src: url('../fonts/GothamPro.eot');
-	src: local('Gotham Pro'), local('GothamPro'),
-		url('../fonts/GothamPro.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/GothamPro.woff') format('woff'),
-		url('../fonts/GothamPro.ttf') format('truetype');
-	font-weight: normal;
-	font-style: normal;
+  font-family: "Gotham Pro";
+  src: url("../fonts/GothamPro.eot");
+  src: local("Gotham Pro"), local("GothamPro"),
+    url("../fonts/GothamPro.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/GothamPro.woff") format("woff"),
+    url("../fonts/GothamPro.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-	font-family: 'Futura New';
-	src: url('../fonts/FuturaNewMedium-Reg.eot');
-	src: local('Futura New Medium Reg'), local('FuturaNewMedium-Reg'),
-			url('../fonts/FuturaNewMedium-Reg.eot?#iefix') format('embedded-opentype'),
-			url('../fonts/FuturaNewMedium-Reg.woff2') format('woff2'),
-			url('../fonts/FuturaNewMedium-Reg.woff') format('woff'),
-			url('../fonts/FuturaNewMedium-Reg.ttf') format('truetype');
-	font-weight: 500;
-	font-style: normal;
+  font-family: "Futura New";
+  src: url("../fonts/FuturaNewMedium-Reg.eot");
+  src: local("Futura New Medium Reg"), local("FuturaNewMedium-Reg"),
+    url("../fonts/FuturaNewMedium-Reg.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/FuturaNewMedium-Reg.woff2") format("woff2"),
+    url("../fonts/FuturaNewMedium-Reg.woff") format("woff"),
+    url("../fonts/FuturaNewMedium-Reg.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
 }
 
 @font-face {
-	font-family: 'Futura New';
-	src: url('../fonts/FuturaNewBold-Reg.eot');
-	src: local('Futura New Bold Reg'), local('FuturaNewBold-Reg'),
-			url('../fonts/FuturaNewBold-Reg.eot?#iefix') format('embedded-opentype'),
-			url('../fonts/FuturaNewBold-Reg.woff2') format('woff2'),
-			url('../fonts/FuturaNewBold-Reg.woff') format('woff'),
-			url('../fonts/FuturaNewBold-Reg.ttf') format('truetype');
-	font-weight: bold;
-	font-style: normal;
+  font-family: "Futura New";
+  src: url("../fonts/FuturaNewBold-Reg.eot");
+  src: local("Futura New Bold Reg"), local("FuturaNewBold-Reg"),
+    url("../fonts/FuturaNewBold-Reg.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/FuturaNewBold-Reg.woff2") format("woff2"),
+    url("../fonts/FuturaNewBold-Reg.woff") format("woff"),
+    url("../fonts/FuturaNewBold-Reg.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
 }
 
 @font-face {
-  font-family: 'icons';
-  src:  url('../fonts/icons.eot?p6hwbu');
-  src:  url('../fonts/icons.eot?p6hwbu#iefix') format('embedded-opentype'),
-    url('../fonts/icons.ttf?p6hwbu') format('truetype'),
-    url('../fonts/icons.woff?p6hwbu') format('woff'),
-    url('../fonts/icons.svg?p6hwbu#icomoon') format('svg');
+  font-family: "icons";
+  src: url("../fonts/icons.eot?p6hwbu");
+  src: url("../fonts/icons.eot?p6hwbu#iefix") format("embedded-opentype"),
+    url("../fonts/icons.ttf?p6hwbu") format("truetype"),
+    url("../fonts/icons.woff?p6hwbu") format("woff"),
+    url("../fonts/icons.svg?p6hwbu#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
 
 @font-face {
-	font-family: 'Futura New Demi';
-	src: url('../fonts/FuturaNewDemi-Reg.eot');
-	src: local('Futura New Demi Reg'), local('FuturaNewDemi-Reg'),
-			url('../fonts/FuturaNewDemi-Reg.eot?#iefix') format('embedded-opentype'),
-			url('../fonts/FuturaNewDemi-Reg.woff2') format('woff2'),
-			url('../fonts/FuturaNewDemi-Reg.woff') format('woff'),
-			url('../fonts/FuturaNewDemi-Reg.ttf') format('truetype');
-	font-weight: normal;
-	font-style: normal;
+  font-family: "Futura New Demi";
+  src: url("../fonts/FuturaNewDemi-Reg.eot");
+  src: local("Futura New Demi Reg"), local("FuturaNewDemi-Reg"),
+    url("../fonts/FuturaNewDemi-Reg.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/FuturaNewDemi-Reg.woff2") format("woff2"),
+    url("../fonts/FuturaNewDemi-Reg.woff") format("woff"),
+    url("../fonts/FuturaNewDemi-Reg.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-	font-family: 'Futura New';
-	src: url('../fonts/FuturaNewLight-Reg.eot');
-	src: local('Futura New Light Reg'), local('FuturaNewLight-Reg'),
-			url('../fonts/FuturaNewLight-Reg.eot?#iefix') format('embedded-opentype'),
-			url('../fonts/FuturaNewLight-Reg.woff2') format('woff2'),
-			url('../fonts/FuturaNewLight-Reg.woff') format('woff'),
-			url('../fonts/FuturaNewLight-Reg.ttf') format('truetype');
-	font-weight: 300;
-	font-style: normal;
+  font-family: "Futura New";
+  src: url("../fonts/FuturaNewLight-Reg.eot");
+  src: local("Futura New Light Reg"), local("FuturaNewLight-Reg"),
+    url("../fonts/FuturaNewLight-Reg.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/FuturaNewLight-Reg.woff2") format("woff2"),
+    url("../fonts/FuturaNewLight-Reg.woff") format("woff"),
+    url("../fonts/FuturaNewLight-Reg.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
 }

@@ -74,7 +74,7 @@ body {
 
 .icon-menu:before {
   content: "\e908";
-  margin-left: 6px;
+  /* margin-left: 6px; */
 }
 
 .icon-instagram-logo:before {
@@ -109,13 +109,11 @@ body {
 .icon-user-3:before {
   content: "\e90e";
   font-size: 21px;
-  margin-left: 10px;
 }
 
 .icon-shopping-cart:before {
   content: "\e90b";
   font-size: 21.6px;
-  margin-left: 20px;
 }
 /* ---Header menu--- */
 .menu {
@@ -169,8 +167,12 @@ body {
 }
 
 /* ---Information panel--- */
+.information__icon {
+  padding-top: 6px;
+  float: left;
+}
 .information__block {
-  padding: 39px 0 36px 0;
+  padding: 38px 0 34px 0;
   position: relative;
   width: 50%;
 }
@@ -181,50 +183,66 @@ body {
 }
 
 .information__email {
+  margin-top: 1px;
   float: right;
-  width: 42%;
+  width: 41%;
 }
 
 .information__auth {
   width: 55%;
   float: left;
+  padding-top: 41px;
+  margin-left: 13px;
+}
+
+.information__auth > .information__icon {
+  padding: 4px 0 0 10px;
 }
 
 .information__cost {
+  padding-top: 39px;
   float: right;
-  width: 41%;
+  width: 37%;
+}
+
+.information__cost > .information__text {
+  margin-right: 14px;
+  line-height: 16px;
 }
 
 .information__block a {
- color: black;
+  color: black;
 }
 
 .information__block a > .information__basket {
   color: white;
- }
+}
 
 .information__block a:hover > .information__basket {
   background: green;
- }
+}
 
- .information__block a:hover > .icon-shopping-cart {
-  color:green;
- }
+.information__block a:hover > .icon-shopping-cart {
+  color: green;
+}
 
- .information__block a:hover > .information__basket::after {
+.information__block a:hover > .information__basket::after {
   border-top: 5px solid green;
- }
+}
 
 .information strong {
   font-size: 15px;
-  line-height: 14px;
+  line-height: 13px;
   color: black;
 }
 
 .information__text {
   color: rgba(0, 0, 0, 0.5);
-  margin-left: 10px;
   float: left;
+}
+
+.information__email > .information__text {
+  margin-left: -3px;
 }
 
 .information__basket {
@@ -251,17 +269,12 @@ body {
   right: 27%;
 }
 
-.information__icon {
-  padding-top: 6px;
-  float: left;
-}
-
 .information__logo {
   height: 105px;
   width: 199px;
-  background: url(../img/head-logo.png) 42% 44% #f3f3f3 no-repeat;
-  background-size: 85%;
-  margin: 0 auto;
+  background: url(../img/head-logo.png) 50% 43% #f3f3f3 no-repeat;
+  background-size: 86%;
+  margin-left: 80px;
 }
 
 /* ---Categories panel--- */
@@ -276,19 +289,17 @@ body {
   display: inline;
   float: left;
   text-align: center;
-  margin-top: 22px;
-  margin-left: 65px;
+  margin: 23px 0 0 65px;
 }
+
 .categories li:nth-child(5) {
-  margin-left: 90px;
-  margin-right: 30px;
+  margin: 23px 30px 0 90px;
 }
 
 .categories li:nth-child(7) {
   margin-left: 75px;
-  margin-right: 3px;
+  margin-right: 2px;
 }
-
 .categories li a:hover > .categories__icon {
   color: black;
 }
@@ -301,21 +312,22 @@ body {
   margin-left: 0;
 }
 .categories__icon {
-  font-size: 40px;
+  font-size: 37.5px;
+  padding-left: 3px;
   color: rgba(0, 0, 0, 0.3);
 }
 
 .categories__label {
-  padding-top: 6px;
+  padding-top: 9px;
   letter-spacing: 0.1em;
   position: relative;
 }
 
 .categories__label sup {
- font-size: 10px;
- position: absolute;
- top: 65%;
- right: -10%;
+  font-size: 10px;
+  position: absolute;
+  top: 65%;
+  right: -10%;
 }
 
 .categories__more .categories__label {
@@ -362,8 +374,7 @@ footer a:hover {
 }
 
 .footer__copyright {
-  margin-top: 110px;
-  margin-bottom: 25px;
+  margin: 110px 0 25px 0;
   text-transform: none;
   font-size: 12px;
 }
@@ -375,10 +386,10 @@ footer a:hover {
 }
 
 .footer__form {
-  margin-top: 25px;
-  margin-left: 100px;
+  margin: 25px 0 0 100px;
   padding-bottom: 10px;
   border-bottom: 3px solid white;
+  position: relative;
 }
 .footer__input {
   font-weight: 300;
@@ -401,6 +412,9 @@ footer a:hover {
   border: none;
   border-radius: 9px;
   float: right;
+  position: absolute;
+  top: -30%;
+  right: 0%;
 }
 
 .footer__social {
@@ -412,4 +426,3 @@ footer a:hover {
   color: #91aef5;
   border: none;
 }
-
