@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/fonts.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/media.css" />
   </head>
   <body>
     <header>
@@ -14,9 +15,11 @@
       <div class="menu">
         <div class="container">
           <div class="row">
-            <div class="col-lg-10">
+            <div class="col-xs-6 col-sm-12 col-lg-10">
               <nav>
-                <ul>
+                <div class="menu__header menu-hidden"><a href="#">&#9829; Избранное</a></div>
+                <ul class="menu__list">
+                  
                   <li><a href="#">О компании</a></li>
                   <li><a href="#">Контакты</a></li>
                   <li><a href="#">Сотрудничество</a></li>
@@ -37,11 +40,11 @@
         </div>
       </div>
       <!-- Information panel -->
-      <div class="information">
+       <div class="information">
         <div class="container">
           <div class="row">
-            <div class="col-lg-4">
-              <div class="information__block">
+            <div class="col-lg-4 col-sm-4">
+              <div class="information__block information__phone">
                 <span class="information__icon icon-telephone"></span>
                 <div class="information__text text-uppercase">
                   Ваш город: ПЕРМЬ <br>
@@ -50,7 +53,7 @@
                   </a>
                 </div>
               </div>
-              <div class="information__block">
+              <div class="information__block information__email">
                 <span class="information__icon icon-email-2"></span>
                 <div class="information__text">
                   Напишите нам <br>
@@ -60,33 +63,37 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-4">
-              <div class="information__logo"></div>
+            <div class="col-lg-4 col-sm-4 col-xs-5">
+              <div class="information__logo">
+              </div>
             </div>
-            <div class="col-lg-4">
-              <div class="information__block float-right">
-                 <div class="information__text float-left text-align-right">
+           <div class=" col-xs-7 col-sm-4 col-lg-4">
+              <div class="information__block information__auth">
+                 <div class="information__text text-align-right">
                   Личный кабинет <br>
                   <a href="#">
-                    <strong>Вход/регистрация</strong>
+                    <strong class="text-show">Вход/регистрация</strong><strong class="text-hidden">Войти</strong>
                   </a>
                 </div>
-                <span class="information__icon icon-user-3"></span>
+                <span class="information__icon icon-user-3 float-right"></span>
               </div>
-              <div class="information__block">
-                <div class="information__text float-left text-align-right">
+              <div class="information__block information__cost">
+                <div class="information__text text-align-right">
                   Товаров на сумму <br>
                   <a href="#">
-                    <strong>320 000</strong>
+                    <strong>320 000 Р</strong>
                   </a>
                 </div>
+                <a href="#">
                 <div class="information__basket">
-                  <a href="#">2</a>
+                  2
                 </div>
                 <span class="information__icon icon-shopping-cart float-right"></span>
+              </a>
               </div>
             </div>
           </div>
+        </div>
         </div>
       </div>
       <!-- Categories panel -->
@@ -159,11 +166,11 @@
                     </div>
                   </a>
                 </li>
-                <li>
+                <li class="categories__more">
                   <a href="#">
                     <span class="categories__icon icon-menu"></span>
                     <div class="categories__label">
-                      Еще
+                      Еще <sup>&#x25BC;</sup>
                     </div>
                   </a>
                 </li>
@@ -177,7 +184,7 @@
     <footer>
       <div class="container">
         <div class="row">
-          <div class="col-lg-2">
+          <div class="col-lg-2 col-sm-3 col-xs-6">
             <div class="footer__block">
               <h3 class="footer__heading">
                 Мебель
@@ -185,12 +192,13 @@
               <ul>
                 <li><a href="#">Диваны</a></li>
                 <li><a href="#">Кровати</a></li>
+                <li><a href="#">Кровати</a></li>
                 <li><a href="#">Кресла</a></li>
                 <li><a href="#">Консоли</a></li>
               </ul>
             </div>
           </div>
-          <div class="col-lg-2">
+          <div class="col-lg-2 col-sm-3 col-xs-6">
             <div class="footer__block">
               <h3 class="footer__heading">
                 Свет
@@ -204,7 +212,7 @@
               </ul>
             </div>
           </div>
-          <div class="col-lg-2">
+          <div class="col-lg-2 col-sm-3 col-xs-6">
             <div class="footer__block">
               <h3 class="footer__heading">
                 Декор
@@ -217,7 +225,7 @@
               </ul>
             </div>
           </div>
-          <div class="col-lg-2">
+          <div class="col-lg-2 col-sm-3 col-xs-6">
             <div class="footer__block">
               <h3 class="footer__heading">
                 Компания
@@ -231,9 +239,9 @@
               </ul>
             </div>
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4 col-sm-12 col-xs-12">
             <div class="footer__block">
-              <h3 class="footer__heading float-right">
+              <h3 class="footer__heading text-align-right">
                 Подпишитесь
               </h3>
               <form action="#" class="footer__form">
@@ -247,14 +255,14 @@
                 </button>
               </form>
               <div class="footer__social">
-                <a href="#"><span class="icon-facebook"></span></a>
                 <a href="#"><span class="icon-instagram-logo"></span></a>
+                <a href="#"><span class="icon-facebook"></span></a>
               </div>
             </div>
           </div>
         </div>
         <div class="row">
-          <div class="col-lg-2">
+          <div class="col-lg-2 col-sm-3 col-xs-6">
             <div class="footer__block">
               <h3 class="footer__heading">
                 Новости
@@ -265,7 +273,7 @@
               </ul>
             </div>
           </div>
-          <div class="col-lg-2">
+          <div class="col-lg-2 col-sm-3 col-xs-6">
             <div class="footer__block">
               <h3 class="footer__heading">
                 Другое

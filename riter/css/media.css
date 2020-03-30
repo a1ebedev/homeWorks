@@ -1,0 +1,79 @@
+@media screen and (min-width: 1279px) {
+  .text-hidden, .menu-hidden {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  .menu {
+    padding: 25px 0;
+  }
+  .menu__button, .menu-hidden, .text-show, .information__basket, .categories li:nth-child(5), .categories li:nth-child(7) {
+    display: none;
+  }
+  .information__block {
+    width: 100%;
+    padding: 0;
+    font-size: 9px;
+    padding-top: 10px;
+  }
+  .information__email {
+    float: left;
+  }
+  .information__auth {
+    width: 46%;
+  }
+  .information__cost {
+    width: 53%;
+  }
+
+  .information strong {
+    font-size: 11px;
+  }
+  .information__text, .footer__form {
+     margin-left: 0px;
+  }
+  .icon-shopping-cart:before, .icon-user-3:before {
+    margin-left: 6px;
+    font-size: 18px;
+  }
+   .icon-telephone:before {
+    margin-right: 15px;
+  }
+
+  .text-hidden {
+    display: block;
+  }
+  .categories li {
+    margin-left: 56px;
+    font-size: 9px;
+  }    
+   .categories__icon, .icon-bench:before {
+    font-size: 25px;
+  }
+  }
+
+  @media screen and (max-width: 767px) {
+    .menu-hidden {
+      display: block;
+    }
+    .menu__button {
+      display: block;
+      margin-right: 15px;
+    }
+    .menu__button-label, .menu__list, .information__phone, .information__email, .categories, .icon-user-3:before, .icon-shopping-cart:before   {
+      display: none;
+    }
+
+    .information__logo {
+      margin: 0 0 0 -14px;
+      background-size: 60%;
+      width: 150px;
+      height: 80px;
+
+    }
+    .information__block {
+      width: auto;
+      margin-left: 10px;
+   }
+  } 

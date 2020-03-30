@@ -69,10 +69,12 @@ body {
 
 .icon-bench:before {
   content: "\e901";
+  font-size: 34px;
 }
 
 .icon-menu:before {
   content: "\e908";
+  margin-left: 6px;
 }
 
 .icon-instagram-logo:before {
@@ -82,6 +84,7 @@ body {
 .icon-facebook:before {
   content: "\e905";
   font-size: 20px;
+  margin-left: 4px;
 }
 
 .icon-verified:before {
@@ -94,13 +97,13 @@ body {
 .icon-telephone:before {
   content: "\e90d";
   font-size: 21px;
-  padding-right: 9px;
+  margin-right: 9px;
 }
 
 .icon-email-2:before {
   content: "\e904";
   font-size: 17px;
-  padding-right: 12px;
+  margin-right: 12px;
 }
 
 .icon-user-3:before {
@@ -167,20 +170,50 @@ body {
 
 /* ---Information panel--- */
 .information__block {
-  padding: 38px 0 36px 0;
-  width: 58%;
-  float: left;
+  padding: 39px 0 36px 0;
   position: relative;
+  width: 50%;
 }
 
-.information__block:nth-child(2n) {
-  width: 40%;
-  margin-right: 0;
+.information__phone {
+  float: left;
+  width: 58%;
 }
 
-.information__block:nth-child(3) {
-  /* width: 40%; */
+.information__email {
+  float: right;
+  width: 42%;
 }
+
+.information__auth {
+  width: 55%;
+  float: left;
+}
+
+.information__cost {
+  float: right;
+  width: 41%;
+}
+
+.information__block a {
+ color: black;
+}
+
+.information__block a > .information__basket {
+  color: white;
+ }
+
+.information__block a:hover > .information__basket {
+  background: green;
+ }
+
+ .information__block a:hover > .icon-shopping-cart {
+  color:green;
+ }
+
+ .information__block a:hover > .information__basket::after {
+  border-top: 5px solid green;
+ }
 
 .information strong {
   font-size: 15px;
@@ -190,6 +223,8 @@ body {
 
 .information__text {
   color: rgba(0, 0, 0, 0.5);
+  margin-left: 10px;
+  float: left;
 }
 
 .information__basket {
@@ -198,18 +233,13 @@ body {
   font-weight: bold;
   text-align: center;
   line-height: 17px;
-  width: 26px;
+  width: 27px;
   height: 17px;
   background: black;
   border-radius: 4px;
   position: absolute;
-  top: 17%;
-  right: 5%;
-}
-
-.information__basket a {
-color: white;
-text-decoration: none;
+  top: 19%;
+  right: 0%;
 }
 
 .information__basket::after {
@@ -224,7 +254,6 @@ text-decoration: none;
 .information__icon {
   padding-top: 6px;
   float: left;
-  /* padding-right: 11px; */
 }
 
 .information__logo {
@@ -234,6 +263,7 @@ text-decoration: none;
   background-size: 85%;
   margin: 0 auto;
 }
+
 /* ---Categories panel--- */
 .categories {
   border-top: 1px solid rgba(234, 235, 237, 0.6);
@@ -252,6 +282,11 @@ text-decoration: none;
 .categories li:nth-child(5) {
   margin-left: 90px;
   margin-right: 30px;
+}
+
+.categories li:nth-child(7) {
+  margin-left: 75px;
+  margin-right: 3px;
 }
 
 .categories li a:hover > .categories__icon {
@@ -273,6 +308,18 @@ text-decoration: none;
 .categories__label {
   padding-top: 6px;
   letter-spacing: 0.1em;
+  position: relative;
+}
+
+.categories__label sup {
+ font-size: 10px;
+ position: absolute;
+ top: 65%;
+ right: -10%;
+}
+
+.categories__more .categories__label {
+  margin-left: -10px;
 }
 
 /* ---footer--- */
@@ -280,8 +327,9 @@ footer {
   font-family: "Futura New";
   background: black;
   color: white;
-  margin-top: 70px;
+  margin-top: 76px;
   text-transform: uppercase;
+  padding-top: 18px;
 }
 
 footer a {
@@ -295,39 +343,47 @@ footer a:hover {
 }
 
 .footer__block {
-  margin-top: 60px;
+  margin-top: 39px;
   letter-spacing: 0.2em;
 }
 
 .footer__heading {
+  font-family: "Futura New Demi";
   font-size: 19px;
-  font-weight: normal;
+  letter-spacing: 0.2em;
   margin-bottom: 16px;
+  width: 100%;
 }
 
 .footer__block li {
   list-style-type: none;
   line-height: 12px;
-  margin-bottom: 7px;
+  margin-bottom: 7.4px;
 }
 
 .footer__copyright {
-  margin-top: 113px;
+  margin-top: 110px;
   margin-bottom: 25px;
   text-transform: none;
+  font-size: 12px;
 }
 
 .footer__copyright a {
   float: right;
   color: white;
+  text-decoration: underline;
 }
 
 .footer__form {
+  margin-top: 25px;
+  margin-left: 100px;
   padding-bottom: 10px;
-  margin-left: 70px;
   border-bottom: 3px solid white;
 }
 .footer__input {
+  font-weight: 300;
+  font-style: normal;
+  line-height: 18px;
   background: black;
   border: none;
   font-size: 18px;
@@ -348,11 +404,12 @@ footer a:hover {
 }
 
 .footer__social {
+  margin-top: 31px;
   float: right;
-  margin-top: 30px;
 }
 
 .footer__social a:hover {
   color: #91aef5;
   border: none;
 }
+
