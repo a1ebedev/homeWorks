@@ -119,50 +119,39 @@ body {
 .menu {
   background: black;
   text-transform: uppercase;
+  line-height: 11px;
   letter-spacing: 0.1em;
-  padding: 15px 0px 13px 0px;
+  padding: 15px 0 13px 0;
 }
-
 .menu a {
   color: white;
   text-decoration: none;
 }
-
 .menu a:hover {
   color: #91aef5;
 }
-
-.menu li {
-  display: inline;
-  margin-left: 35px;
+.menu__item {
+  list-style-type: none;
+  display: inline-flex;
+  margin-right: 39px;
 }
-
-.menu li:nth-child(1) {
-  margin-left: 0;
+.menu__button {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -2px;
 }
-
-.menu a {
-  color: white;
+.menu__link {
+  display: inline-flex;
+  align-items: center;
 }
-
-.menu__button-label {
-  float: right;
-  padding-right: 13px;
-}
-
-.menu__button a:hover > .menu__button-label {
-  color: #91aef5;
-}
-
-.menu__button-icon {
+.menu__icon {
   width: 28px;
   height: 12px;
-  border-bottom: 2px solid white;
   border-top: 2px solid white;
-  float: right;
+  border-bottom: 2px solid white;
+  margin: 0 0 3px 13px;
 }
-
-.menu__button a:hover > .menu__button-icon {
+.menu__button a:hover > .menu__icon {
   border-color: #91aef5;
 }
 
