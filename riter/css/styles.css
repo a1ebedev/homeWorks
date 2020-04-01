@@ -4,16 +4,8 @@
 }
 
 body {
-  font-family: "Gotham Pro";
+  font-family: "Gotham Pro", sans-serif;
   font-size: 10px;
-}
-
-.float-left {
-  float: left;
-}
-
-.float-right {
-  float: right;
 }
 
 .text-align-right {
@@ -23,98 +15,6 @@ body {
   text-transform: uppercase;
 }
 
-/* ---Icons--- */
-[class^="icon-"],
-[class*=" icon-"] {
-  font-family: "icons" !important;
-  font-size: 10px;
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.icon-armchair-2:before {
-  content: "\e900";
-}
-
-.icon-sleep:before {
-  content: "\e90c";
-}
-
-.icon-couch:before {
-  content: "\e903";
-}
-
-.icon-round-table:before {
-  content: "\e90a";
-}
-
-.icon-chair-4:before {
-  content: "\e902";
-}
-
-.icon-pouf:before {
-  content: "\e909";
-}
-
-.icon-greek-column:before {
-  content: "\e906";
-}
-
-.icon-bench:before {
-  content: "\e901";
-  font-size: 34px;
-}
-
-.icon-menu:before {
-  content: "\e908";
-  /* margin-left: 6px; */
-}
-
-.icon-instagram-logo:before {
-  content: "\e907";
-  font-size: 20px;
-}
-.icon-facebook:before {
-  content: "\e905";
-  font-size: 20px;
-  margin-left: 4px;
-}
-
-.icon-verified:before {
-  content: "\e90f";
-  font-size: 16px;
-  line-height: 30px;
-  color: #fff;
-}
-
-.icon-telephone:before {
-  content: "\e90d";
-  font-size: 21px;
-  margin-right: 9px;
-}
-
-.icon-email-2:before {
-  content: "\e904";
-  font-size: 17px;
-  margin-right: 12px;
-}
-
-.icon-user-3:before {
-  content: "\e90e";
-  font-size: 21px;
-}
-
-.icon-shopping-cart:before {
-  content: "\e90b";
-  font-size: 21.6px;
-}
 /* ---Header menu--- */
 .menu {
   background: black;
@@ -156,85 +56,66 @@ body {
 }
 
 /* ---Information panel--- */
-.information__icon {
-  padding-top: 6px;
-  float: left;
-}
-.information__block {
-  padding: 38px 0 34px 0;
-  position: relative;
-  width: 50%;
-}
-
-.information__phone {
-  float: left;
-  width: 58%;
-}
-
-.information__email {
-  margin-top: 1px;
-  float: right;
-  width: 41%;
-}
-
-.information__auth {
-  width: 55%;
-  float: left;
-  padding-top: 41px;
-  margin-left: 13px;
-}
-
-.information__auth > .information__icon {
-  padding: 4px 0 0 10px;
-}
-
-.information__cost {
-  padding-top: 39px;
-  float: right;
-  width: 37%;
-}
-
-.information__cost > .information__text {
-  margin-right: 14px;
-  line-height: 16px;
-}
-
-.information__block a {
-  color: black;
-}
-
-.information__block a > .information__basket {
-  color: white;
-}
-
-.information__block a:hover > .information__basket {
-  background: green;
-}
-
-.information__block a:hover > .icon-shopping-cart {
-  color: green;
-}
-
-.information__block a:hover > .information__basket::after {
-  border-top: 5px solid green;
-}
-
-.information strong {
+.inf {
   font-size: 15px;
-  line-height: 13px;
+  font-weight: bold;
+  justify-self: space-between;
+}
+.inf span {
+  display: flex;
+  font-size: 10px;
+  opacity: 0.5;
+}
+.inf a {
   color: black;
+  text-decoration: none;
 }
-
-.information__text {
-  color: rgba(0, 0, 0, 0.5);
-  float: left;
+.inf a:hover {
+  text-decoration: underline;
 }
-
-.information__email > .information__text {
-  margin-left: -3px;
+.inf__wrap {
+  display: inline-flex;
 }
-
-.information__basket {
+.inf__block {
+  margin-right: 11px;
+  padding: 45px 13px 26px 33px;
+  position: relative;
+}
+.inf__block::before {
+  content: "";
+  width: 21px;
+  height: 21px;
+  background: url(../img/phone.svg);
+  position: absolute;
+  top: 50%;
+  left: 0%;
+}
+.inf__block-email::before {
+  background: url(../img/email.svg) no-repeat;
+  top: 53%;
+  width: 23px;
+}
+.inf__logo {
+  height: 105px;
+  width: 199px;
+  background: url(../img/head-logo.png) 50% 43% #f3f3f3 no-repeat;
+  background-size: 86%;
+  margin-left: 80px;
+}
+.inf__block-user {
+  text-align: right;
+  padding-left: 23px;
+}
+.inf__block-user::before {
+  background: url(../img/user.svg) no-repeat;
+  left: 100%;
+}
+.inf__block-shop::before {
+  background: url(../img/shop.svg) no-repeat;
+  width: 23px;
+  left: 100%;
+}
+.block-shop__numb {
   font-family: "Futura New";
   font-size: 12px;
   font-weight: bold;
@@ -245,11 +126,14 @@ body {
   background: black;
   border-radius: 4px;
   position: absolute;
-  top: 19%;
-  right: 0%;
+  top: 25%;
+  right: -17%;
+}
+.inf__block-shop a > .block-shop__numb {
+color: white;
 }
 
-.information__basket::after {
+.block-shop__numb::after {
   content: "";
   border: 5px solid transparent;
   border-top: 5px solid black;
@@ -257,72 +141,53 @@ body {
   top: 100%;
   right: 27%;
 }
-
-.information__logo {
-  height: 105px;
-  width: 199px;
-  background: url(../img/head-logo.png) 50% 43% #f3f3f3 no-repeat;
-  background-size: 86%;
-  margin-left: 80px;
-}
-
-/* ---Categories panel--- */
-.categories {
+/* ---Points panel--- */
+.points {
+  padding: 22px 0;
   border-top: 1px solid rgba(234, 235, 237, 0.6);
-  font-size: 11px;
-  text-transform: uppercase;
-  font-weight: bold;
 }
-
-.categories li {
+.points__list {
+  display: flex;
+  justify-content: space-between;
+}
+.points__item {
   display: inline;
-  float: left;
   text-align: center;
-  margin: 23px 0 0 65px;
+  flex: 1 0 auto;
+  position: relative;
 }
-
-.categories li:nth-child(5) {
-  margin: 23px 30px 0 90px;
+.points__item:first-child {
+  flex: 0;
+  padding-left: 12px;
 }
-
-.categories li:nth-child(7) {
-  margin-left: 75px;
-  margin-right: 2px;
+.points__item:last-child {
+  flex: 0;
+  margin-right: 12px;
+  width: 150px;
+  text-align: left;
 }
-.categories li a:hover > .categories__icon {
-  color: black;
-}
-
-.categories li a {
+.points__item a {
+  font-size: 11px;
+  font-weight: bold;
+  text-transform: uppercase;
   color: black;
   text-decoration: none;
 }
-.categories li:nth-child(1) {
-  margin-left: 0;
+.points__icon {
+  fill: rgba(0, 0, 0, 0.3);
+  height: 40px;
+  width: 40px;
+  margin-bottom: 8px;
 }
-.categories__icon {
-  font-size: 37.5px;
-  padding-left: 3px;
-  color: rgba(0, 0, 0, 0.3);
-}
-
-.categories__label {
-  padding-top: 9px;
-  letter-spacing: 0.1em;
-  position: relative;
-}
-
-.categories__label sup {
-  font-size: 10px;
+.points span {
+  font-size: 9px;
   position: absolute;
-  top: 65%;
+  top: 78%;
   right: -10%;
 }
-
-.categories__more .categories__label {
-  margin-left: -10px;
+.points__item a:hover > .points__icon {
+  fill: rgba(0, 0, 0, 1);
 }
-
 /* ---footer--- */
 footer {
   font-family: "Futura New";
