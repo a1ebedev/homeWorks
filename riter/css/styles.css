@@ -15,6 +15,30 @@ body {
   text-transform: uppercase;
 }
 
+.blue-button a {
+  text-transform: uppercase;
+  color: white;
+  font-size: 13px;
+  line-height: 15px;
+  background: linear-gradient(
+    106.57deg,
+    #807fd4 0%,
+    #609ce2 0.01%,
+    #2346ff 100%
+  );
+  box-shadow: 0px 5px 12px rgba(71, 120, 239, 0.6);
+  border-radius: 4px;
+  text-decoration: none;
+}
+.blue-button a:hover {
+  background: linear-gradient(
+    106.57deg,
+    #807fd4 0.01%,
+    #609ce2 0.01%,
+    #2346ff 10%
+  );
+  box-shadow: 0px 5px 12px rgba(71, 120, 239, 0.6);
+}
 /* ---Header menu--- */
 .menu {
   background: black;
@@ -220,28 +244,8 @@ body {
 }
 .mine-slider__btn a {
   padding: 21px 22px 16px 20px;
-  color: white;
-  font-size: 13px;
-  line-height: 15px;
-  background: linear-gradient(
-    106.57deg,
-    #807fd4 0%,
-    #609ce2 0.01%,
-    #2346ff 100%
-  );
-  box-shadow: 0px 5px 12px rgba(71, 120, 239, 0.6);
-  border-radius: 4px;
-  text-decoration: none;
 }
-.mine-slider__btn a:hover {
-  background: linear-gradient(
-    106.57deg,
-    #807fd4 0.01%,
-    #609ce2 0.01%,
-    #2346ff 10%
-  );
-  box-shadow: 0px 5px 12px rgba(71, 120, 239, 0.6);
-}
+
 .mine-slider__nav {
   margin-top: 191px;
 }
@@ -256,6 +260,162 @@ body {
   width: 44px;
   background: #2d54fb;
 }
+/* ---advantages--- */
+.advantages {
+  padding: 70px 0;
+}
+.advantages__block {
+  text-align: center;
+  margin-top: 50px;
+}
+.advantages__icon {
+  width: 30px;
+  height: 30px;
+}
+.advantages__title {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 18px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 33px 0 19px 0;
+}
+.advantages__text {
+  font-family: Futura New;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  opacity: 0.4;
+}
+/* ---products--- */
+.products {
+  font-family: Futura New;
+  text-transform: uppercase;
+}
+.products__item {
+  padding-left: 22px;
+  margin-bottom: 40px;
+  background: white;
+}
+.products__item:hover {
+  box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.6);
+  margin-top: -5px;
+  margin-bottom: 5px;
+}
+.products__status {
+  position: absolute;
+  top: 1%;
+  left: 12.5%;
+}
+.products__status a {
+  color: white;
+  background: black;
+  letter-spacing: 0.2em;
+  padding: 5px 6px 7px 6px;
+}
+.products__item img,
+.products__status {
+  margin-left: -22px;
+  z-index: 99;
+}
+.products__title {
+  font-size: 17px;
+  line-height: 19px;
+  letter-spacing: 0.2em;
+  padding-top: 19px;
+  padding-right: 70px;
+  position: relative;
+}
+.products__title a {
+  color: black;
+  text-decoration: none;
+  display: block;
+  padding-bottom: 6px;
+}
+.products__title a:hover {
+  text-decoration: underline;
+}
+.products__favorite {
+  width: 18px;
+  height: 16px;
+  position: absolute;
+  top: 26%;
+  right: 6.5%;
+}
+.products__item a:hover > .products__favorite {
+  fill: red;
+}
+.products__art,
+.products__prod {
+  line-height: 15px;
+  letter-spacing: 0.1em;
+  color: rgba(0, 0, 0, 0.5);
+}
+.products__prod a {
+  color: black;
+  text-decoration: underline;
+}
+.products__prod a:hover {
+  text-decoration: none;
+}
+.products__price {
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: 0.05em;
+  position: relative;
+}
+.products__price a {
+  padding-top: 9px;
+  padding-bottom: 17px;
+  display: inline-flex;
+  color: black;
+}
+.products__price span {
+  padding-left: 5px;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.05em;
+  text-decoration-line: line-through;
+  opacity: 0.3;
+  position: absolute;
+  top: 30%;
+  right: 22%;
+}
+/* ---Cards--- */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+.cards__block {
+  background: url(../img/cards-bg.png) #f3f3f3 100% no-repeat;
+  padding: 50px;
+  width: 49%;
+  margin: 19px 0px 0px 9px;
+
+}
+.cards__block:nth-child(3n+1) {
+  background: url(../img/cards-bg.png) #fff 100% no-repeat;
+}
+.cards__title {
+  font-size: 32px;
+  line-height: 41px;
+  text-transform: uppercase;
+  width: 60%;
+}
+.cards__text {
+  font-size: 15px;
+  line-height: 20px;
+  opacity: 0.7;
+  width: 50%;
+  margin-top: 26px;
+}
+.cards__btn {
+  margin-top: 135px;
+}
+.cards__btn a {
+  padding: 14px 22px 12px 22px;
+}
+
 /* ---footer--- */
 footer {
   font-family: "Futura New";
