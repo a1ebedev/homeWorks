@@ -13,6 +13,13 @@
     <header>
       <!-- svg -->
       <svg width="0" height="0" class="hidden">
+          <symbol viewBox="0 0 49 8" xmlns="http://www.w3.org/2000/svg" id="more-arrow">
+            <path d="M48.354 4.354a.5.5 0 0 0 0-.708L45.172.464a.5.5 0 1 0-.707.708L47.293 4l-2.828 2.828a.5.5 0 1 0 .707.708l3.182-3.182zM0 4.5h48v-1H0v1z"></path>
+          </symbol>
+          <symbol viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg" id="rev-arrow">
+            <circle cx="30" cy="30" r="28.5" stroke="#000" stroke-width="3"></circle>
+            <path d="M38.815 31.518a1 1 0 0 0 0-1.414l-6.364-6.364a1 1 0 1 0-1.414 1.414l5.657 5.657-5.657 5.657a1 1 0 1 0 1.414 1.414l6.364-6.364zm-16.923.293h16.216v-2H21.892v2z" fill="#000"></path>
+          </symbol>
         <symbol
         viewBox="0 0 19 16" 
         xmlns="http://www.w3.org/2000/svg"
@@ -645,13 +652,16 @@
           <div class="about__more">
             <a href="#">
               Подробнее о компании
+              <svg class="about__arrow">
+                <use xlink:href="#more-arrow"></use>
+              </svg>
             </a>
           </div>
          </div> 
         </div>
       </div>
     </section>
-    <div class="brands">
+    <section class="brands">
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
@@ -815,7 +825,84 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
+    <section class="reviews">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="reviews__slider">
+              <div class="reviews__header">
+                <div class="reviews__title header-block">
+                  Дизайнеры интерьера о нас.
+                </div>
+                  <div class="reviews__designers">
+                    <a href="#">
+                      Чем мы можем быть полезны дизайнерам
+                      <svg class="reviews__arrow">
+                        <use xlink:href="#more-arrow"></use>
+                      </svg>
+                    </a>
+                  </div>
+                  <div class="reviews__nav">
+                    <a href="#">
+                      <svg class="reviews__back">
+                        <use xlink:href="#rev-arrow"></use>
+                      </svg>
+                    </a>
+                    <a href="#">
+                      <svg class="reviews__next">
+                        <use xlink:href="#rev-arrow"></use>
+                      </svg>
+                    </a>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="reviews__list">
+              <div class="reviews__item">
+                <div class="reviews__user">
+                  <div class="reviews__photo">
+                    <img src="img/rev-photo.jpg" alt="photo">
+                  </div>
+                  <div class="reviews__info">
+                    <div class="reviews__name">Елена Малышева</div>
+                    <div class="reviews__prof">Архитектор, дизайнер, выпускник Ba</div>
+                    <div class="reviews__city">LONDON | Москва</div>
+                    <div class="reviews__site">
+                      <a href="#">www.website.ru</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="reviews__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                </div>
+              </div>
+              <div class="reviews__item reviews__item-opacity">
+                <div class="reviews__user">
+                  <div class="reviews__photo">
+                    <img src="img/rev-photo.jpg" alt="photo">
+                  </div>
+                  <div class="reviews__info">
+                    <div class="reviews__name">Елена Малышева</div>
+                    <div class="reviews__prof">Архитектор, дизайнер, выпускник Ba</div>
+                    <div class="reviews__city">LONDON | Москва</div>
+                    <div class="reviews__site">
+                      <a href="#">www.website.ru</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="reviews__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <footer>
       <div class="container">
         <div class="row">
