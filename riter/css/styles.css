@@ -391,9 +391,8 @@ body {
   padding: 50px;
   width: 49%;
   margin: 19px 0px 0px 9px;
-
 }
-.cards__block:nth-child(3n+1) {
+.cards__block:nth-child(3n + 1) {
   background: url(../img/cards-bg.png) #fff 100% no-repeat;
 }
 .cards__title {
@@ -415,7 +414,70 @@ body {
 .cards__btn a {
   padding: 14px 22px 12px 22px;
 }
+/* ---about--- */
+.about {
+  background: url(../img/about-bg.svg) 50% 68% no-repeat;
 
+}
+.about__title {
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-top: 144px;
+}
+.about__header {
+  font-size: 37px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 42px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  width: 60%;
+  margin: 30px auto 37px auto;
+}
+.about__text {
+  font-size: 16px;
+  line-height: 30px;
+  column-count: 2;
+  column-width: 258px;
+  column-gap: 58px;
+  padding: 0px 83px;
+}
+.about__text-header {
+  font-family: Futura New;
+  font-size: 20px;
+  line-height: 23px;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  padding: 34px 0 11px 0;
+}
+.about__more {
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 23px;
+  text-transform: uppercase;
+  padding: 6px 0 0 13px;
+}
+.about__more a {
+  display: block;
+  color: black;
+  text-decoration: none;
+  position: relative;
+}
+.about__more a::after {
+  content: "";
+  width: 100px;
+  height: 30px;
+  background: url(../img/about-more.svg) no-repeat;
+  position: absolute;
+  right: -2%;
+  top: 30%;
+}
+.about__more a:hover {
+font-weight: normal;
+}
 /* ---footer--- */
 footer {
   font-family: "Futura New";
