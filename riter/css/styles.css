@@ -589,7 +589,7 @@ body {
   line-height: 15px;
   text-transform: uppercase;
   opacity: 0.5;
-  margin: 1px 0 2px 0
+  margin: 1px 0 2px 0;
 }
 .reviews__site {
   font-size: 16px;
@@ -607,6 +607,45 @@ body {
   padding: 33px;
   margin: 21px 0 0 0;
 }
+/* ---follow--- */
+.follow {
+  background: url(../img/follow-bg.jpg) no-repeat;
+  background-size: cover;
+}
+.follow__block {
+  display: inline-flex;
+  background: white;
+  box-shadow: -20px 4px 54px rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+  margin: 84px 0;
+  padding: 28px 30px 21px 30px;
+}
+.follow__text {
+  display: flex;
+  flex-direction: column;
+  font-size: 24px;
+  line-height: 37px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-right: 74px;
+}
+.follow__text span {
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  opacity: 0.4;
+}
+.follow__btn {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.follow__btn a {
+  padding: 13px;
+}
+/* ---blog--- */
+
 /* ---footer--- */
 footer {
   font-family: "Futura New";
