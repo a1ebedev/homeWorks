@@ -7,7 +7,6 @@ body {
   font-family: "Gotham Pro", sans-serif;
   font-size: 10px;
 }
-
 .text-align-right {
   text-align: right;
 }
@@ -54,11 +53,12 @@ body {
   text-transform: uppercase;
   line-height: 11px;
   letter-spacing: 0.1em;
-  padding: 15px 0 13px 0;
 }
 .menu a {
   color: white;
   text-decoration: none;
+  display: block;
+  padding: 15px 35px 13px 0;
 }
 .menu a:hover {
   color: #91aef5;
@@ -66,37 +66,44 @@ body {
 .menu__item {
   list-style-type: none;
   display: inline-flex;
-  margin-right: 39px;
 }
 .menu__button {
-  display: flex;
+  display: inline-flex;
+  width: 100%;
   justify-content: flex-end;
-  margin-top: -2px;
 }
 .menu__link {
-  display: inline-flex;
+  display: block;
   align-items: center;
+  position: relative;
+  margin-right: 6px;
 }
-.menu__icon {
+.menu__link:after {
+  content: "";
+  position: absolute;
+  top: 34%;
+  right: -8%;
   width: 28px;
   height: 12px;
   border-top: 2px solid white;
   border-bottom: 2px solid white;
-  margin: 0 0 3px 13px;
 }
-.menu__button a:hover > .menu__icon {
+.menu__link:hover:after {
   border-color: #91aef5;
 }
 
 /* ---Information panel--- */
 .inf {
   font-size: 15px;
+  line-height: 14px;
   font-weight: bold;
   justify-self: space-between;
 }
 .inf span {
-  display: flex;
+  display: block;
+  width: 100%;
   font-size: 10px;
+  line-height: 10px;
   opacity: 0.5;
 }
 .inf a {
@@ -107,11 +114,14 @@ body {
   text-decoration: underline;
 }
 .inf__wrap {
-  display: inline-flex;
+  display: flex;
+  justify-content: space-between;
+  padding: 42px 27px 0 30px;
 }
 .inf__block {
   margin-right: 11px;
-  padding: 45px 13px 26px 33px;
+
+  /* padding: 42px 0px 11px 33px; */
   position: relative;
 }
 .inf__block::before {
@@ -120,12 +130,20 @@ body {
   height: 21px;
   background: url(../img/phone.svg);
   position: absolute;
-  top: 50%;
-  left: 0%;
+  top: 0%;
+  left: -22%;
+}
+.inf__phone-perm,
+.inf__phone {
+  display: none;
+}
+.inf__block-email {
+  margin-right: 80px;
 }
 .inf__block-email::before {
   background: url(../img/email.svg) no-repeat;
-  top: 53%;
+  top: 20%;
+  left: -33%;
   width: 23px;
 }
 .inf__logo {
@@ -133,20 +151,23 @@ body {
   width: 199px;
   background: url(../img/head-logo.png) 50% 43% #f3f3f3 no-repeat;
   background-size: 86%;
-  margin-left: 80px;
+  margin-left: -17px;
 }
 .inf__block-user {
-  text-align: right;
-  padding-left: 23px;
+  margin-left: 81px;
 }
 .inf__block-user::before {
   background: url(../img/user.svg) no-repeat;
-  left: 100%;
+  left: 106%;
+}
+.inf__block-shop {
+  position: relative;
 }
 .inf__block-shop::before {
   background: url(../img/shop.svg) no-repeat;
   width: 23px;
-  left: 100%;
+  top: 4%;
+  left: 115%;
 }
 .block-shop__numb {
   font-family: "Futura New";
@@ -159,8 +180,8 @@ body {
   background: black;
   border-radius: 4px;
   position: absolute;
-  top: 25%;
-  right: -17%;
+  top: -85%;
+  right: -41%;
 }
 .inf__block-shop a > .block-shop__numb {
   color: white;
@@ -180,28 +201,20 @@ body {
   border-top: 1px solid rgba(234, 235, 237, 0.6);
 }
 .points__list {
+  margin: 0 -22px;
   display: flex;
   justify-content: space-between;
 }
 .points__item {
   display: inline;
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 0.1em;
   text-align: center;
   flex: 1 0 auto;
   position: relative;
 }
-.points__item:first-child {
-  flex: 0;
-  padding-left: 12px;
-}
-.points__item:last-child {
-  flex: 0;
-  margin-right: 12px;
-  width: 150px;
-  text-align: left;
-}
 .points__item a {
-  font-size: 11px;
-  font-weight: bold;
   text-transform: uppercase;
   color: black;
   text-decoration: none;
@@ -210,13 +223,16 @@ body {
   fill: rgba(0, 0, 0, 0.3);
   height: 40px;
   width: 40px;
-  margin-bottom: 8px;
+  margin-bottom: 5px;
 }
-.points span {
+.points__title {
+  position: relative;
+}
+.points__title span {
   font-size: 9px;
   position: absolute;
-  top: 78%;
-  right: -10%;
+  top: 0%;
+  right: 25%;
 }
 .points__item a:hover > .points__icon {
   fill: rgba(0, 0, 0, 1);
@@ -256,7 +272,7 @@ body {
 }
 
 .main-slider__nav {
-  margin-top: 191px;
+  margin-top: 188px;
 }
 .main-slider__checkbox {
   display: inline-flex;
@@ -271,7 +287,7 @@ body {
 }
 /* ---advantages--- */
 .advantages {
-  padding: 70px 0;
+  padding: 20px 0 71px 0;
 }
 .advantages__block {
   text-align: center;
@@ -287,7 +303,7 @@ body {
   line-height: 18px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  padding: 33px 0 19px 0;
+  padding: 26px 0 24px 15px;
 }
 .advantages__text {
   font-family: Futura New;
@@ -300,16 +316,21 @@ body {
 .products {
   font-family: Futura New;
   text-transform: uppercase;
+  background: url(../img/prod-bg.svg) 0% 37% no-repeat;
+  background-size: 40%;
+  margin-bottom: 47px;
 }
 .products__item {
   padding-left: 22px;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   background: white;
 }
 .products__item:hover {
-  box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.6);
+  background: rgb(250, 250, 250);
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.5);
   margin-top: -5px;
   margin-bottom: 5px;
+  transition: all 0.5s ease;
 }
 .products__status {
   position: absolute;
@@ -392,12 +413,15 @@ body {
 }
 /* ---Cards--- */
 .cards {
+  margin-top: 12px;
+}
+.cards__list {
   display: flex;
   flex-wrap: wrap;
 }
 .cards__block {
   background: url(../img/cards-bg.png) #f3f3f3 100% no-repeat;
-  padding: 50px;
+  padding: 44px 51px 59px 51px;
   width: 49%;
   margin: 19px 0px 0px 9px;
 }
@@ -406,7 +430,7 @@ body {
 }
 .cards__title {
   font-size: 32px;
-  line-height: 41px;
+  line-height: 36px;
   text-transform: uppercase;
   width: 60%;
 }
@@ -418,7 +442,7 @@ body {
   margin-top: 26px;
 }
 .cards__btn {
-  margin-top: 135px;
+  margin-top: 140px;
 }
 .cards__btn a {
   padding: 14px 22px 12px 22px;
@@ -426,6 +450,8 @@ body {
 /* ---about--- */
 .about {
   background: url(../img/about-bg.svg) 50% 68% no-repeat;
+  position: relative;
+  margin-top: 139px;
 }
 .about__title {
   font-size: 16px;
@@ -433,7 +459,6 @@ body {
   text-align: center;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  margin-top: 144px;
 }
 .about__header {
   line-height: 42px;
@@ -482,8 +507,22 @@ body {
   fill: #91aef5;
 }
 /* ---brands--- */
+.brands {
+  background: url(../img/brands-bg.svg) 0% -24% no-repeat,
+    url(../img/brand-bg-right.svg) 100% 21% no-repeat;
+  padding-bottom: 74px;
+  position: relative;
+  margin-top: 142px;
+}
+.brands__bg {
+  position: absolute;
+  background: url(../img/brand-bg-right.svg) 100% 0% no-repeat;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+}
 .brands__header {
-  margin: 150px auto 57px auto;
+  margin: 0 auto 57px auto;
 }
 .brands__item {
   display: inline-flex;
@@ -496,7 +535,6 @@ body {
 .reviews {
   background: #f7f7f7;
   padding: 67px 0 99px 0;
-  margin-top: 6px;
 }
 .reviews__slider {
   position: relative;
@@ -600,7 +638,7 @@ body {
 }
 .reviews__text {
   font-size: 16px;
-  line-height: 23px;
+  line-height: 24px;
   background: white;
   box-shadow: -10px 14px 60px rgba(0, 0, 0, 0.07);
   border-radius: 0 50px 50px 50px;
@@ -624,7 +662,7 @@ body {
   display: flex;
   flex-direction: column;
   font-size: 24px;
-  line-height: 37px;
+  line-height: 29px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   margin-right: 74px;
@@ -661,7 +699,7 @@ body {
   line-height: 23px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  margin: 65px -23px 0 0;
+  margin: 62px -26px 0 0;
   display: flex;
   justify-content: flex-end;
 }
@@ -687,7 +725,7 @@ body {
 }
 
 .blog__list {
-  margin-top: 84px;
+  margin-top: 81px;
 }
 .blog__block {
   background: white;
@@ -755,30 +793,31 @@ body {
   fill: #91aef5;
 }
 /* ---footer--- */
-footer {
+.footer {
   font-family: "Futura New";
   background: black;
   color: white;
-  margin-top: 76px;
   text-transform: uppercase;
   padding-top: 18px;
 }
 
-footer a {
+.footer a {
   color: white;
   text-decoration: none;
-}
-footer a:hover {
-  color: white;
-  text-decoration: none;
-  border-bottom: 1px dotted white;
 }
 
 .footer__block {
   margin-top: 39px;
   letter-spacing: 0.2em;
 }
-
+.footer__block li {
+  list-style-type: none;
+  line-height: 13px;
+  margin-bottom: 7.4px;
+}
+.footer__block a:hover {
+  text-decoration: underline;
+}
 .footer__heading {
   font-family: "Futura New Demi";
   font-size: 19px;
@@ -786,25 +825,6 @@ footer a:hover {
   margin-bottom: 16px;
   width: 100%;
 }
-
-.footer__block li {
-  list-style-type: none;
-  line-height: 12px;
-  margin-bottom: 7.4px;
-}
-
-.footer__copyright {
-  margin: 110px 0 25px 0;
-  text-transform: none;
-  font-size: 12px;
-}
-
-.footer__copyright a {
-  float: right;
-  color: white;
-  text-decoration: underline;
-}
-
 .footer__form {
   margin: 25px 0 0 100px;
   padding-bottom: 10px;
@@ -819,6 +839,8 @@ footer a:hover {
   border: none;
   font-size: 18px;
   outline: none;
+  padding-right: 35px;
+  width: 100%;
 }
 
 ::placeholder {
@@ -831,18 +853,39 @@ footer a:hover {
   background: #1d1c1c;
   border: none;
   border-radius: 9px;
-  float: right;
   position: absolute;
   top: -30%;
   right: 0%;
 }
-
+.footer__btn svg {
+  width: 16px;
+  height: 16px;
+}
 .footer__social {
-  margin-top: 31px;
-  float: right;
+  margin-top: 30px;
+  display: flex;
+  justify-content: flex-end;
+}
+.footer__social svg {
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+  fill: white;
 }
 
-.footer__social a:hover {
-  color: #91aef5;
-  border: none;
+.footer__social svg:hover {
+  fill: #91aef5;
+}
+
+.footer__copyright {
+  margin: 105px 0 25px 0;
+  text-transform: none;
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__copyright a {
+  color: white;
+  text-decoration: underline;
 }
