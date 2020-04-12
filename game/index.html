@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="game-menu" id="game-menu">
+        <div class="game-menu-content">
+          <h1>Меню игры</h1>
+          <div class="game-menu-item">
+            <label for="firstplayersize">Размер Вируса</label>
+            <input
+              type="range"
+              name="firstplayersize"
+              id="firstplayersize"
+              min="20"
+              max="150"
+              value="90"
+              step="1"
+              oninput="menu('firstplayersize', 'fpsize-view')"
+            />
+            <p name="fpsize-view" id="fpsize-view" class="fpsize-view"></p>
+          </div>
+          <div class="game-menu-item">
+            <label for="firstplayerspeed">Скорость вируса</label>
+            <input
+              type="range"
+              name="firstplayerspeed"
+              id="firstplayerspeed"
+              min="1"
+              max="40"
+              value="25"
+              step="1"
+              oninput="menu('firstplayerspeed', 'fpspeed-view')"
+            />
+            <p name="fpspeed-view" id="fpspeed-view" class="fpsize-view"></p>
+          </div>
+          <div class="game-menu-item">
+            <label for="Secondplayersize">Размер защитника</label>
+            <input
+              type="range"
+              name="secondplayersize"
+              id="secondplayersize"
+              min="20"
+              max="150"
+              value="90"
+              step="1"
+              oninput="menu('secondplayersize', 'spsize-view')"
+            />
+            <p name="spsize-view" id="spsize-view" class="fpsize-view"></p>
+          </div>
+          <div class="game-menu-item">
+            <label for="Second-player-speed">Скорость защитника</label>
+            <input
+              type="range"
+              name="secondplayerspeed"
+              id="secondplayerspeed"
+              min="1"
+              max="40"
+              value="25"
+              step="1"
+              oninput="menu('secondplayerspeed', 'spspeed-view')"
+            />
+            <p name="spspeed-view" id="spspeed-view" class="fpsize-view"></p>
+          </div>
+          <button onclick="nextSlide('game-menu', 'config-view')">
+            Продолжить
+          </button>
+        </div>
+      </div>
+      <div class="game-menu config-view" id="config-view">
+        <div class="game-menu-content">
+          <h1>Условия игры</h1>
+          <p>
+            Побеждает игрок который больше по размерам. <br />
+            Если размеры одинаковые, то побеждает защитник. <br />
+            Если игрок заденет поле игры с шипами он проиграл.
+          </p>
+          <h1>Управление персонажами</h1>
+          <div class="config-view-item">
+            <p>Вирус</p>
+            <img src="img/wasd-keys.png" alt="wasd-png" />
+          </div>
+          <div class="config-view-item">
+            <p>Защитник</p>
+            <img src="img/arrow-keys.png" alt="wasd-png" />
+          </div>
+          <button onclick="startGame()">Начать игру</button>
+        </div>
+      </div>
+      <div class="game-over game-menu" id="game-over">
+        <div class="game-menu-content">
+          <div class="game-menu-item">
+            <h1>Игра окончена</h1>
+            <p id="winner"></p>
+            <button onclick="location.reload()">Играть еще раз</button>
+          </div>
+        </div>
+      </div>
+      <canvas id="game" width="800" height="800">Не поддерживается!</canvas>
+    </div>
+    <script src="game.js"></script>
+  </body>
+</html>

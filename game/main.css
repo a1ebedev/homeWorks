@@ -1,0 +1,86 @@
+.container {
+  font-family: "Pangolin", cursive;
+  width: 800px;
+  margin: 0 auto;
+  transition: 7s;
+}
+.game-menu {
+  display: block;
+  text-align: center;
+  background: url(img/bg.jpg);
+  color: white;
+}
+.game-menu-content {
+  height: 800px;
+  background: rgba(0, 0, 0, 0.5);
+}
+.game-menu-item {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.fpsize-view {
+  position: absolute;
+  right: 13%;
+  top: 17%;
+  font-size: 25px;
+}
+
+.game-menu label {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.game-menu input {
+  width: 400px;
+  margin: 20px auto;
+}
+button {
+  color: white;
+  font-weight: bold;
+  width: 200px;
+  height: 50px;
+  margin: 70px auto;
+  background: green;
+  border: 2px solid green;
+  border-radius: 10px;
+}
+button:hover {
+  background: transparent;
+  transition: 0.3s;
+}
+button:focus {
+  outline: none;
+}
+#game {
+  display: none;
+}
+#game-over {
+  display: none;
+  font-size: 30px;
+}
+h1 {
+  color: red;
+  padding: 40px 0 0px 0;
+  text-align: center;
+}
+.config-view {
+  display: none;
+}
+.config-view-item {
+  margin: 0 auto;
+  width: 450px;
+  font-size: 20px;
+}
+.config-view-item p {
+	float: left;
+  width: 155px;
+}
+img {
+  padding-top: 20px;
+  margin-left: 50px;
+  width: 170px;
+  height: 100px;
+}
