@@ -16,7 +16,6 @@ svg {
 .text-uppercase {
   text-transform: uppercase;
 }
-
 .blue-button a {
   text-transform: uppercase;
   color: white;
@@ -31,11 +30,12 @@ svg {
   box-shadow: 0px 5px 12px rgba(71, 120, 239, 0.6);
   border-radius: 4px;
   text-decoration: none;
+  transition: 0.7s;
 }
 .blue-button a:hover {
-  background: linear-gradient(106.57deg, #807fd4 0%, #609ce2 0%, #7f91eb 80%);
-  transition: 4s;
+  opacity: 0.4;
 }
+
 .header-block {
   font-size: 37px;
   font-weight: bold;
@@ -54,6 +54,7 @@ svg {
   display: block;
   color: black;
   text-decoration: none;
+  transition: 0.3s;
 }
 .more svg {
   margin-left: 10px;
@@ -155,9 +156,11 @@ svg {
 .inf a {
   color: black;
   text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: 0.4s;
 }
 .inf a:hover {
-  text-decoration: underline;
+  border-color: black;
 }
 .inf__wrap {
   display: flex;
@@ -218,6 +221,14 @@ svg {
   top: 4%;
   left: 115%;
 }
+.inf__block-shop::after {
+  content: "";
+  border: 5px solid transparent;
+  border-top: 5px solid black;
+  position: absolute;
+  top: -13%;
+  right: -31%;
+}
 .block-shop-numb {
   font-family: "Futura New";
   font-size: 12px;
@@ -234,15 +245,6 @@ svg {
 }
 .inf__block-shop a > .block-shop-numb {
   color: white;
-}
-
-.block-shop-numb::after {
-  content: "";
-  border: 5px solid transparent;
-  border-top: 5px solid black;
-  position: absolute;
-  top: 100%;
-  right: 27%;
 }
 /* ---Points panel--- */
 .points {
@@ -299,7 +301,7 @@ svg {
   overflow: hidden;
 }
 .slider::before {
-  content: 'riter';
+  content: "riter";
   text-transform: uppercase;
   font-size: 800px;
   font-weight: bold;
@@ -318,10 +320,13 @@ svg {
   transition: opacity 1.3s;
 }
 .slider__title {
+  margin-top: 65px;
   font-size: 60px;
   line-height: 69px;
   font-weight: normal;
   letter-spacing: 0.1em;
+  position: relative;
+  z-index: 9;
 }
 
 .slider__subtitle {
@@ -331,13 +336,17 @@ svg {
   line-height: 26px;
   opacity: 0.7;
   margin-top: -25px;
-  margin-bottom: 47px;
+  margin-bottom: 40px;
+  position: relative;
+  z-index: 9;
 }
 .slider__btn {
   margin-top: 25px;
+  position: relative;
+  z-index: 9;
 }
 .slider__btn a {
-  padding: 21px 22px 16px 20px;
+  padding: 17px 21px;
 }
 .slider__img {
   height: 578px;
@@ -348,12 +357,10 @@ svg {
 }
 .slider__img img {
   width: 100%;
+  z-index: 1;
 }
 .slider__nav {
-  margin: 188px 0 50px 0;
-  position: absolute;
-  top: 50%;
-  left: 20%;
+  margin-top: 487px;
   z-index: 99;
 }
 .slider__checkbox {
@@ -363,6 +370,10 @@ svg {
   background: #d7e4f4;
   border-radius: 2px;
   transition: width 1s;
+}
+.slider__checkbox:hover {
+  background: #ff4081;
+  transition: 0.4s;
 }
 .slider__checkbox-select {
   width: 44px;
@@ -409,7 +420,6 @@ svg {
   margin-bottom: 47px;
 }
 .products__item {
-  /* padding-left: 22px; */
   margin-bottom: 30px;
   background: white;
   position: relative;
@@ -432,6 +442,7 @@ svg {
   background: black;
   letter-spacing: 0.2em;
   padding: 5px 6px 7px 6px;
+  text-decoration: none;
 }
 .products__item img {
   width: 100%;
@@ -451,7 +462,6 @@ svg {
 .products__title a {
   color: black;
   text-decoration: none;
-  display: block;
   padding-bottom: 6px;
 }
 .products__title a:hover {
@@ -486,9 +496,15 @@ svg {
 }
 .products__price a {
   padding-top: 9px;
-  padding-bottom: 17px;
+  margin-bottom: 17px;
   display: inline-flex;
   color: black;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: 0.4s;
+}
+.products__price a:hover {
+  border-color: black;
 }
 .products__price span {
   font-size: 14px;
@@ -682,6 +698,12 @@ svg {
 }
 .reviews__site a {
   color: black;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: 0.4s;
+}
+.reviews__site a:hover {
+  border-color: black;
 }
 .reviews__text {
   font-size: 16px;
@@ -777,6 +799,12 @@ svg {
 }
 .blog__date a {
   color: black;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: 0.4s;
+}
+.blog__date a:hover {
+  border-color: black;
 }
 .blog__title {
   font-size: 18px;
@@ -788,6 +816,12 @@ svg {
 }
 .blog__title a {
   color: black;
+  border-bottom: 1px solid transparent;
+  text-decoration: none;
+  transition: 0.4s;
+}
+.blog__title a:hover {
+  border-color: black;
 }
 .blog__text {
   font-size: 13px;
@@ -809,10 +843,11 @@ svg {
 }
 
 .footer a {
-  color: white;
   text-decoration: none;
+  color: white;
+  border-bottom: 1px dashed transparent;
+  transition: 0.4s;
 }
-
 .footer__block {
   margin-top: 39px;
   letter-spacing: 0.2em;
@@ -823,7 +858,7 @@ svg {
   margin-bottom: 7.4px;
 }
 .footer__block a:hover {
-  text-decoration: underline;
+  border-color: white;
 }
 .footer__heading {
   font-family: "Futura New Demi";
@@ -881,6 +916,12 @@ svg {
   display: flex;
   justify-content: flex-end;
 }
+.footer__social a {
+  text-decoration: none;
+}
+.footer__social a:hover {
+  border-color: transparent;
+}
 .footer__social svg {
   width: 20px;
   height: 20px;
@@ -901,8 +942,9 @@ svg {
 
 .footer__copyright a {
   color: white;
-  text-decoration: underline;
+  border-bottom: 1px solid white;
+  transition: 0.4s;
 }
 .footer__copyright a:hover {
-  text-decoration: none;
+  border-color: transparent;
 }
