@@ -291,23 +291,40 @@ svg {
   fill: rgba(0, 0, 0, 1);
 }
 /* ---main slider--- */
-.main-slider {
+.slider {
   padding: 30px 0;
+  position: relative;
+  height: 578px;
+  background: #f7f7f7;
+  overflow: hidden;
 }
-.main-slider__item {
+.slider::before {
+  content: 'riter';
+  text-transform: uppercase;
+  font-size: 800px;
+  font-weight: bold;
+  color: white;
+  position: absolute;
+  top: -35%;
+  left: -5%;
+}
+.slider__item {
   height: 100%;
   width: 100%;
-  background: url(../img/main-slider-bg.jpg) no-repeat;
-  background-size: cover;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  opacity: 0;
+  transition: opacity 1.3s;
 }
-.main-slider__title {
+.slider__title {
   font-size: 60px;
   line-height: 69px;
   font-weight: normal;
   letter-spacing: 0.1em;
 }
 
-.main-slider__subtitle {
+.slider__subtitle {
   font-family: Georgia;
   font-style: italic;
   font-size: 21px;
@@ -316,26 +333,41 @@ svg {
   margin-top: -25px;
   margin-bottom: 47px;
 }
-.main-slider__btn {
+.slider__btn {
   margin-top: 25px;
 }
-.main-slider__btn a {
+.slider__btn a {
   padding: 21px 22px 16px 20px;
 }
-
-.main-slider__nav {
-  margin: 188px 0 50px 0;
+.slider__img {
+  height: 578px;
+  width: 800px;
+  position: absolute;
+  right: 0%;
+  top: 0%;
 }
-.main-slider__checkbox {
+.slider__img img {
+  width: 100%;
+}
+.slider__nav {
+  margin: 188px 0 50px 0;
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  z-index: 99;
+}
+.slider__checkbox {
   display: inline-flex;
   width: 10px;
   height: 6px;
   background: #d7e4f4;
   border-radius: 2px;
+  transition: width 1s;
 }
-.main-slider__checkbox-select {
+.slider__checkbox-select {
   width: 44px;
   background: #2d54fb;
+  transition: width 1s;
 }
 /* ---advantages--- */
 .advantages {
