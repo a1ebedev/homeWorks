@@ -1,0 +1,17 @@
+html,
+body,
+ul,
+p,
+h3 {
+  margin:  0;
+  padding: 0;
+}
+
+html {
+  font-family: $basic-font;
+  font-size: 10px;
+}
+
+a:hover {
+  text-decoration: none;
+}

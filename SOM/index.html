@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,800;0,900;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>SOM</title>
+  </head>
+  <body>
+    <!-- svg -->
+    <svg width="0" height="0" class="hidden">
+      <symbol
+        viewBox="0 0 18 18"
+        xmlns="http://www.w3.org/2000/svg"
+        id="search"
+      >
+        <path
+          d="M12.713 11.37h-.79l-.28-.27a6.471 6.471 0 0 0 1.57-4.23 6.5 6.5 0 1 0-6.5 6.5c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99 1.49-1.49-4.99-5zm-6 0c-2.49 0-4.5-2.01-4.5-4.5s2.01-4.5 4.5-4.5 4.5 2.01 4.5 4.5-2.01 4.5-4.5 4.5z"
+        ></path>
+      </symbol>
+      <symbol
+        viewBox="0 0 27 26"
+        xmlns="http://www.w3.org/2000/svg"
+        id="purchases"
+      >
+        <path
+          d="M22.576 19.363L26.02 7.06H8.4L6.89.871H.991V3.31h4.062l3.984 16.054h13.54z"
+        ></path>
+        <circle r="2.36" transform="matrix(-1 0 0 1 10.894 23.154)"></circle>
+        <circle r="2.36" transform="matrix(-1 0 0 1 20.797 23.154)"></circle>
+      </symbol>
+      <symbol viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" id="user">
+        <path
+          d="M10.491.025a4.75 4.75 0 1 1 0 9.5 4.75 4.75 0 0 1 0-9.5zm0 11.874c5.249 0 9.5 2.126 9.5 4.75v2.375h-19V16.65c0-2.624 4.251-4.75 9.5-4.75z"
+        ></path>
+      </symbol>
+    </svg>
+    <header class="header">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-2">
+            <div class="header__logo">
+              <div class="logo">
+                <div class="logo__main">
+                  S<span class="logo__main_color_green logo__main_style_italic"
+                    >O</span
+                  ><span class="logo__main_color_black">M</span>
+                </div>
+                <div class="logo__sub">Seller<br />Online<br />Marketplace</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="header__search">
+              <form action="#" class="search">
+                <input type="text" class="search__line" />
+                <button class="search__button">
+                  <svg class="search__icon">
+                    <use xlink:href="#search"></use>
+                  </svg>
+                </button>
+              </form>
+            </div>
+          </div>
+          <div class="col-lg-2">
+            <div class="header__currency">
+              <div class="currency">
+                <div class="currency__title">
+                  Currency
+                </div>
+                <div class="currency__list">
+                  Usd
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-lg-offset-2">
+            <div class="header__user">
+              <div class="user">
+                <a href="#" class="user__purchases">
+                  <svg class="user__basket">
+                    <use xlink:href="#purchases"></use>
+                  </svg>
+                  <div class="user__number">
+                    34
+                  </div>
+                </a>
+                <a href="#" class="user__menu">
+                  <svg class="user__icon">
+                    <use xlink:href="#user"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <nav>
+              <div class="header__navigation">
+                <ul class="navigation">
+                  <li class="navigation__item">
+                    <a href="#" class="navigation__link">Leather goods</a>
+                  </li>
+                  <li class="navigation__item">
+                    <a href="#" class="navigation__link navigation__link_select"
+                      >Wood products</a
+                    >
+                  </li>
+                  <li class="navigation__item">
+                    <a href="#" class="navigation__link">Wedding</a>
+                  </li>
+                  <li class="navigation__item">
+                    <a href="#" class="navigation__link">Happy Birthday</a>
+                  </li>
+                  <li class="navigation__item">
+                    <a href="#" class="navigation__link"
+                      >Toys and entertainment</a
+                    >
+                  </li>
+                  <li class="navigation__item">
+                    <a href="#" class="navigation__link">Art objects</a>
+                  </li>
+                  <li class="navigation__item">
+                    <a href="#" class="navigation__link"
+                      >Goods for needlework
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="slider right-edge">
+              <div class="slider__item">
+                <div class="slider__title">Handmade <br />sweets</div>
+                <a href="#" class="slider__button">
+                  View 456 products
+                </a>
+                <img src="img/slide1.jpg" alt="slide1" />
+              </div>
+              <ul class="slider__nav">
+                <li class="slider__dot slider__dot_select"></li>
+                <li class="slider__dot"></li>
+                <li class="slider__dot"></li>
+                <li class="slider__dot"></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="question">
+              <div class="question__title question__title_margin_bottom">
+                Want <br />to sell <br />on SOM?
+              </div>
+              <a href="#" class="question__button">Сreate a store</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <section class="advantages">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="advantage">
+              <img src="img/adv-earth.svg" alt="adv-earth" />
+              <div class="advantage__wrap">
+                <h3 class="advantage__title">
+                  Unique everything
+                </h3>
+                <p class="advantage__text">
+                  We have millions of one-of-a-kind items, so you can find
+                  whatever you need (or really, really want).
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="advantage advantage_img_margin_left">
+              <img src="img/adv-sellers.svg" alt="adv-earth" />
+              <div class="advantage__wrap">
+                <h3 class="advantage__title">
+                  Independent sellers
+                </h3>
+                <p class="advantage__text">
+                  Buy directly from someone who put their heart and soul into
+                  making something special.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="advantage">
+              <img src="img/adv-secure.svg" alt="adv-earth" />
+              <div class="advantage__wrap">
+                <h3 class="advantage__title">
+                  Secure shopping
+                </h3>
+                <p class="advantage__text">
+                  We use best-in-class technology to protect your transactions.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="seller">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="question question_max_width">
+              <div class="question__title">
+                What is <br />
+                Seller-online ?
+              </div>
+              <a href="#" class="question__button">Read more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer__menu">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3">
+              <h3 class="footer__title">
+                Store
+              </h3>
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <a href="#" class="footer__link">
+                    Подарочные сертификаты
+                  </a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">
+                    Seller-online блог
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-3">
+              <h3 class="footer__title">
+                Sell
+              </h3>
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <a href="#" class="footer__link">
+                    Sell on SOM
+                  </a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">
+                    Teams
+                  </a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">
+                    Forums
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-3">
+              <h3 class="footer__title">
+                About
+              </h3>
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <a href="#" class="footer__link">
+                    Seller-online inc.
+                  </a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">
+                    Policies
+                  </a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">
+                    Investors
+                  </a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">
+                    Careers
+                  </a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">
+                    Press
+                  </a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">
+                    Impact
+                  </a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">
+                    Legal Imprint
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-3">
+              <h3 class="footer__title">
+                Follow SOM
+              </h3>
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <a href="#" class="footer__link">
+                    Facebook
+                  </a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">
+                    Instagram
+                  </a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">
+                    Pinterest
+                  </a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">
+                    Twitter
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__copyright">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-7">
+              <div class="footer__wrap">
+                <div class="logo">
+                  <div class="logo__main">
+                    S<span class="logo__main_color_green logo__main_style_italic"
+                      >O</span
+                    ><span class="logo__main_color_white">M</span>
+                  </div>
+                </div>
+                <p class="footer__year">© 2019 Solma</p>
+              </div>
+            </div>
+            <div class="col-lg-5">
+              <div class="footer__wrap footer__wrap_float_right">
+                <ul class="footer__list footer__list_inline footer__list_color">
+                  <li class="footer__item">
+                    <a href="#" class="footer__link">
+                      Terms of Use
+                    </a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="#" class="footer__link">
+                      Privacy
+                    </a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="#" class="footer__link">
+                      Interest-based ads
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>       
+    </footer>
+  </body>
+</html>
