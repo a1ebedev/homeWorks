@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="246"
+   height="101"
+   viewBox="0 0 246 101"
+   fill="none"
+   version="1.1"
+   id="svg139"
+   sodipodi:docname="discount.svg"
+   inkscape:version="0.92.4 (fd57863, 2020-04-02)">
+  <metadata
+     id="metadata145">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs143" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1025"
+     id="namedview141"
+     showgrid="false"
+     inkscape:zoom="5.0647242"
+     inkscape:cx="145.92936"
+     inkscape:cy="94.079597"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg139" />
+  <path
+     d="M 174.57533,86.584563 C 187.86952,99.093848 233.73134,91.676326 243.44757,60.5 248.45748,31.7 232.2633,8.83333 223.53959,1"
+     id="path135"
+     inkscape:connector-curvature="0"
+     style="stroke:#eaeaea"
+     sodipodi:nodetypes="ccc" />
+  <path
+     d="M1.20532 67C1.20532 63.9624 3.66776 61.5 6.70532 61.5H160.481C161.967 61.5 163.39 62.1013 164.426 63.1671L177.358 76.4752C179.368 78.5435 179.439 81.813 177.52 83.9665L164.434 98.6583C163.39 99.8299 161.896 100.5 160.327 100.5H6.70532C3.66775 100.5 1.20532 98.0376 1.20532 95V67Z"
+     stroke="#E3E3E3"
+     id="path137" />
+</svg>

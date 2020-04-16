@@ -11,13 +11,23 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap"
       rel="stylesheet"
     />
+    <script src="js/jquery-3.5.0.min.js"></script>
+    <script src="js/main.js"></script>
     <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/swiper.min.css" />
     <link rel="stylesheet" href="css/styles.css" />
     <title>SOM</title>
   </head>
   <body>
     <!-- svg -->
     <svg width="0" height="0" class="hidden">
+      <symbol viewBox="0 0 45 15" xmlns="http://www.w3.org/2000/svg" id="arrow">
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M38.19.437L44.552 6.8a1 1 0 0 1 0 1.414L38.19 14.58a1 1 0 0 1-1.414-1.414l4.657-4.657H1.993a1 1 0 1 1 0-2h39.439l-4.657-4.657A1 1 0 0 1 38.189.437z"
+        ></path>
+      </symbol>
       <symbol
         viewBox="0 0 18 18"
         xmlns="http://www.w3.org/2000/svg"
@@ -220,6 +230,119 @@
         </div>
       </div>
     </section>
+    <section class="recent">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <h2>Recently viewed</h2>
+          </div>
+          <div class="col-lg-2 col-lg-offset-4">
+            <div class="recent__nav">
+              <svg class="swiper-nav swiper-prev">
+                <use xlink:href="#arrow"></use>
+              </svg>
+              <svg class="swiper-nav swiper-next">
+                <use xlink:href="#arrow"></use>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <!-- Swiper -->
+            <div class="swiper-container swiper-white">
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <div class="product-tile">
+                    <div class="product-tile__picture">
+                      <a href="#">
+                        <img src="img/product-tile1.jpg" alt="" />
+                      </a>
+                    </div>
+                    <p class="product-tile__description">
+                      Personalized dog leash hanger handmade from the base
+                    </p>
+                    <a href="#" class="product-tile__price">
+                      Sold
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="product-tile">
+                    <div class="product-tile__picture">
+                      <a href="#">
+                        <img src="img/product-tile2.jpg" alt="" />
+                      </a>
+                    </div>
+                    <p class="product-tile__description">
+                      Stamped pet ID tag
+                    </p>
+                    <a href="#" class="product-tile__price">$23.99</a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="product-tile">
+                    <div class="product-tile__picture">
+                      <a href="#">
+                        <img src="img/product-tile3.jpg" alt="" />
+                      </a>
+                    </div>
+                    <p class="product-tile__description">
+                      Personalized Cutting Board - Engraved Cutting Board,
+                      Custom Cutting Board
+                    </p>
+                    <a href="#" class="product-tile__price">$52.00</a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="product-tile">
+                    <div class="product-tile__picture">
+                      <a href="#">
+                        <img src="img/product-tile4.jpg" alt="" />
+                      </a>
+                    </div>
+                    <p class="product-tile__description">
+                      Silicone Bamboo Mold, Chocolate Mold
+                    </p>
+                    <a href="#" class="product-tile__price product-tile__price_color_red">
+                      $37.80 <span class="product-tile__discount">$45.20</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="product-tile">
+                    <div class="product-tile__picture">
+                      <a href="#">
+                        <img src="img/product-tile1.jpg" alt="" />
+                      </a>
+                    </div>
+                    <p class="product-tile__description">
+                      Штампованная бирка удостоверения личности домашнего
+                      питомца
+                    </p>
+                    <a href="#" class="product-tile__price">$23.99</a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="product-tile">
+                    <div class="product-tile__picture">
+                      <a href="#">
+                        <img src="img/product-tile2.jpg" alt="" />
+                      </a>
+                    </div>
+                    <p class="product-tile__description">
+                      Personalized dog leash hanger handmade from the base
+                    </p>
+                    <a href="#" class="product-tile__price">$23.99</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <section class="seller">
       <div class="container">
         <div class="row">
@@ -357,7 +480,8 @@
               <div class="footer__wrap">
                 <div class="logo">
                   <div class="logo__main">
-                    S<span class="logo__main_color_green logo__main_style_italic"
+                    S<span
+                      class="logo__main_color_green logo__main_style_italic"
                       >O</span
                     ><span class="logo__main_color_white">M</span>
                   </div>
@@ -388,7 +512,8 @@
             </div>
           </div>
         </div>
-      </div>       
+      </div>
     </footer>
+    <script src="js/swiper.min.js"></script>
   </body>
 </html>

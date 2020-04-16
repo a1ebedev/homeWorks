@@ -331,7 +331,7 @@ $select-color: $green-color;
     margin: 5px 0 0 0;
     font-size: 14px;
     line-height: 160%;
-    color: #3f3f3f;
+    color: $text-color;
   }
 }
 
@@ -339,9 +339,119 @@ $select-color: $green-color;
   margin: 61px 0 0 0;
 }
 
+.recent {
+  margin: 47px 0;
+  padding: 18px 0;
+  border-top: 1px dashed #e1e0e0;
+  border-bottom: 1px dashed #e1e0e0;
+  &__nav {
+    margin: 0 -62px 0 0;
+    padding: 29px 0 0 0;
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+.product-tile {
+  text-align: left;
+  position: relative;
+  min-height: 261px;
+  &__description {
+    font-size: 14px;
+    line-height: 160%;
+    color: $text-color;
+    padding: 11px 0;
+  }
+  &__price {
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+    font-family: $title-font;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 24px;
+    color: $title-color;
+    transition: 0.4s;
+    &:hover {
+      color: $select-color;
+    }
+    &_color_red {
+      color: $cta-color;
+    }
+  }
+  &__discount {
+    color: $title-color;
+    position: relative;
+    z-index: 2;
+    &::before {
+      content: "";
+      width: 100%;
+      height: 2px;
+      background: $cta-color;
+      position: absolute;
+      top: 50%;
+      left: 0%;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -40%;
+      left: -128%;
+      width: 244px;
+      height: 100px;
+      background: url(../img/discount.svg) no-repeat;
+      background-size: contain;
+    }
+  }
+}
+
+.swiper {
+  &-container {
+    width: 129%;
+    &::before {
+      content: "";
+      width: 115px;
+      height: 100%;
+      background: linear-gradient(to right, transparent, #fff);
+      position: absolute;
+      top: 0%;
+      right: 12%;
+      z-index: 11;
+    }
+    &::after {
+      content: "";
+      width: 180px;
+      height: 100%;
+      background: #fff;
+      position: absolute;
+      top: 0%;
+      right: 0%;
+      z-index: 11;
+    }
+  }
+  &-slide {
+    width: 262px;
+    padding: 0 0 22px 0;
+  }
+  &-nav {
+    width: 80px;
+    height: 15px;
+    transition: 0.4s;
+    &:hover {
+      fill: $select-color;
+    }
+  }
+  &-prev {
+    transform: rotate(180deg);
+  }
+  &-button-disabled {
+    opacity: 0;
+  }
+}
+
 .footer {
   margin: 60px 0 0 0;
-  background: #232F3E;
+  background: #232f3e;
   color: #fff;
   font-size: 14px;
   &__menu {
@@ -359,7 +469,7 @@ $select-color: $green-color;
       margin: 0 0 0 20px;
     }
     &_color li a {
-      color: #9FA9B5;
+      color: #9fa9b5;
     }
   }
   &__item {
@@ -367,16 +477,15 @@ $select-color: $green-color;
     padding: 4px 0;
   }
   &__link {
-    color: #BAC4D0;
+    color: #bac4d0;
     transition: 0.4s;
     &:hover {
       color: $select-color;
     }
   }
   &__copyright {
-    background: #131A22;
+    background: #131a22;
     padding: 35px 0;
-
   }
   &__wrap {
     display: flex;
@@ -388,6 +497,6 @@ $select-color: $green-color;
   }
   &__year {
     margin-left: 30px;
-    color: #9FA9B5;
+    color: #9fa9b5;
   }
 }
