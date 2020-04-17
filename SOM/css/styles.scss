@@ -340,16 +340,10 @@ $select-color: $green-color;
 }
 
 .recent {
-  margin: 47px 0;
-  padding: 18px 0;
+  margin: 47px 0 0 0;
+  padding: 18px 0 40px 0;
   border-top: 1px dashed #e1e0e0;
   border-bottom: 1px dashed #e1e0e0;
-  &__nav {
-    margin: 0 -62px 0 0;
-    padding: 29px 0 0 0;
-    display: flex;
-    justify-content: flex-end;
-  }
 }
 
 .product-tile {
@@ -405,6 +399,26 @@ $select-color: $green-color;
   }
 }
 
+.slider {
+  &__nav {
+    margin: 0 -62px 0 0;
+    padding: 29px 0 0 0;
+    display: flex;
+    justify-content: flex-end;
+  }
+  &__arrow {
+    width: 80px;
+    height: 15px;
+    transition: 0.4s;
+    &_prev {
+      transform: rotate(180deg);
+    }
+    &:hover {
+      fill: $select-color;
+    }
+  }
+}
+
 .swiper {
   &-container {
     width: 129%;
@@ -429,23 +443,70 @@ $select-color: $green-color;
       z-index: 11;
     }
   }
-  &-slide {
-    width: 262px;
-    padding: 0 0 22px 0;
-  }
-  &-nav {
-    width: 80px;
-    height: 15px;
-    transition: 0.4s;
-    &:hover {
-      fill: $select-color;
-    }
-  }
-  &-prev {
-    transform: rotate(180deg);
-  }
   &-button-disabled {
     opacity: 0;
+  }
+}
+.reviews {
+  padding: 23px 0 0 0;
+  &__slide {
+    margin: 0 19px 0 0;
+  }
+}
+
+.review {
+  padding: 5px 15px 0 0;
+  position: relative;
+  min-height: 260px;
+  &__star {
+    width: 20px;
+    height: 20px;
+    fill: #ececec;
+    margin: 0 6px 0 0;
+    &_yellow {
+      fill: #ffbc3d;
+    }
+  }
+  &__text {
+    margin: 11px 0 0 0;
+    font-style: italic;
+    font-size: 14px;
+    line-height: 170%;
+    color: $text-color;
+  }
+  &__user {
+    display: flex;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+  }
+  &__work {
+    width: 100px;
+    height: 77px;
+  }
+  &__avatar {
+    width: 75px;
+    height: 75px;
+    margin: 0 0 0 -13px;
+    border-radius: 50px;
+  }
+  &__wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 0 0 15px;
+    padding: 18px 0 0 0;
+  }
+  &__name {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    color: #1e273a;
+  }
+  &__date {
+    font-size: 14px;
+    line-height: 20px;
+    color: $text-color;
   }
 }
 

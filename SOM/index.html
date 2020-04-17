@@ -21,6 +21,11 @@
   <body>
     <!-- svg -->
     <svg width="0" height="0" class="hidden">
+      <symbol viewBox="0 0 21 20" xmlns="http://www.w3.org/2000/svg" id="star">
+        <path
+          d="M10.902 15.514l6.18 3.73-1.64-7.03 5.46-4.73-7.19-.62-2.81-6.62-2.81 6.62-7.19.62 5.45 4.73-1.63 7.03 6.18-3.73z"
+        ></path>
+      </symbol>
       <symbol viewBox="0 0 45 15" xmlns="http://www.w3.org/2000/svg" id="arrow">
         <path
           fill-rule="evenodd"
@@ -237,11 +242,11 @@
             <h2>Recently viewed</h2>
           </div>
           <div class="col-lg-2 col-lg-offset-4">
-            <div class="recent__nav">
-              <svg class="swiper-nav swiper-prev">
+            <div class="slider__nav">
+              <svg class="slider__arrow slider__arrow_prev recent__prev">
                 <use xlink:href="#arrow"></use>
               </svg>
-              <svg class="swiper-nav swiper-next">
+              <svg class="slider__arrow slider__arrow_next recent__next">
                 <use xlink:href="#arrow"></use>
               </svg>
             </div>
@@ -250,7 +255,7 @@
         <div class="row">
           <div class="col-lg-12">
             <!-- Swiper -->
-            <div class="swiper-container swiper-white">
+            <div class="swiper-container swiper-white recent__list">
               <div class="swiper-wrapper">
                 <!-- Slides -->
                 <div class="swiper-slide">
@@ -305,7 +310,10 @@
                     <p class="product-tile__description">
                       Silicone Bamboo Mold, Chocolate Mold
                     </p>
-                    <a href="#" class="product-tile__price product-tile__price_color_red">
+                    <a
+                      href="#"
+                      class="product-tile__price product-tile__price_color_red"
+                    >
                       $37.80 <span class="product-tile__discount">$45.20</span>
                     </a>
                   </div>
@@ -335,6 +343,279 @@
                       Personalized dog leash hanger handmade from the base
                     </p>
                     <a href="#" class="product-tile__price">$23.99</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="reviews">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <h2>New customer reviews</h2>
+          </div>
+          <div class="col-lg-2 col-lg-offset-4">
+            <div class="slider__nav">
+              <svg class="slider__arrow slider__arrow_prev reviews__prev">
+                <use xlink:href="#arrow"></use>
+              </svg>
+              <svg class="slider__arrow slider__arrow_next reviews__next">
+                <use xlink:href="#arrow"></use>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <!-- Swiper -->
+            <div class="swiper-container swiper-white reviews__list">
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide reviews__slide">
+                  <div class="review">
+                    <div class="review__rating">
+                      <svg class="review__star review__star_yellow">
+                        <use xlink:href="#star"></use>
+                      </svg>
+                      <svg class="review__star review__star_yellow">
+                        <use xlink:href="#star"></use>
+                      </svg>
+                      <svg class="review__star review__star_yellow">
+                        <use xlink:href="#star"></use>
+                      </svg>
+                      <svg class="review__star review__star_yellow">
+                        <use xlink:href="#star"></use>
+                      </svg>
+                      <svg class="review__star">
+                        <use xlink:href="#star"></use>
+                      </svg>
+                    </div>
+                    <p class="review__text">
+                      I ordered a geyser coffee machine. The coffee machine is
+                      out of order. It is not possible to prepare coffee since
+                      it is not possible to close tightly
+                    </p>
+                    <div class="review__user">
+                      <div class="review__img">
+                        <img
+                          src="img/review1img.jpg"
+                          alt=""
+                          class="review__work"
+                        />
+                        <img
+                          src="img/review1avatar.jpg"
+                          alt=""
+                          class="review__avatar"
+                        />
+                      </div>
+                      <div class="review__wrap">
+                        <p class="review__name">
+                          Alexander
+                        </p>
+                        <p class="review__date">
+                          12 sept 2019 г
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide reviews__slide">
+                  <div class="review">
+                    <div class="review__rating">
+                      <svg class="review__star review__star_yellow">
+                        <use xlink:href="#star"></use>
+                      </svg>
+                      <svg class="review__star review__star_yellow">
+                        <use xlink:href="#star"></use>
+                      </svg>
+                      <svg class="review__star">
+                        <use xlink:href="#star"></use>
+                      </svg>
+                      <svg class="review__star">
+                        <use xlink:href="#star"></use>
+                      </svg>
+                      <svg class="review__star">
+                        <use xlink:href="#star"></use>
+                      </svg>
+                    </div>
+                    <p class="review__text">
+                      These are GREAT~!!! Cat was quite eager and happy to work
+                      with us on what our daughter would love. The signs were
+                      exactly what our daughter would want. Great work! Thank
+                      you so very much for your quick service and EXCELLEN
+                    </p>
+                    <div class="review__user">
+                      <div class="review__img">
+                        <img
+                          src="img/review2img.jpg"
+                          alt=""
+                          class="review__work"
+                        />
+                        <img
+                          src="img/review1avatar.jpg"
+                          alt=""
+                          class="review__avatar"
+                        />
+                      </div>
+                      <div class="review__wrap">
+                        <p class="review__name">
+                          Kate
+                        </p>
+                        <p class="review__date">
+                          15 may 2019 г
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide reviews__slide">
+                  <div class="review">
+                    <div class="review__rating">
+                      <svg class="review__star review__star_yellow">
+                        <use xlink:href="#star"></use>
+                      </svg>
+                      <svg class="review__star review__star_yellow">
+                        <use xlink:href="#star"></use>
+                      </svg>
+                      <svg class="review__star review__star_yellow">
+                        <use xlink:href="#star"></use>
+                      </svg>
+                      <svg class="review__star review__star_yellow">
+                        <use xlink:href="#star"></use>
+                      </svg>
+                      <svg class="review__star review__star_yellow">
+                        <use xlink:href="#star"></use>
+                      </svg>
+                    </div>
+                    <p class="review__text">
+                      There is no supply of coffee at all, water flows at the
+                      junction of the connection of these parts. Tightly tie
+                      fails (closes obliquely) for the reason that stopping too
+                      long nozzle container for coffee (instructions 4)
+                    </p>
+                    <div class="review__user">
+                      <div class="review__img">
+                        <img
+                          src="img/review3img.jpg"
+                          alt=""
+                          class="review__work"
+                        />
+                        <img
+                          src="img/review1avatar.jpg"
+                          alt=""
+                          class="review__avatar"
+                        />
+                      </div>
+                      <div class="review__wrap">
+                        <p class="review__name">
+                          Jannifer
+                        </p>
+                        <p class="review__date">
+                          14 march 2019 г
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide reviews__slide">
+                  <div class="review">
+                    <div class="review__rating">
+                      <svg class="review__star review__star_yellow">
+                        <use xlink:href="#star"></use>
+                      </svg>
+                      <svg class="review__star review__star_yellow">
+                        <use xlink:href="#star"></use>
+                      </svg>
+                      <svg class="review__star review__star_yellow">
+                        <use xlink:href="#star"></use>
+                      </svg>
+                      <svg class="review__star review__star_yellow">
+                        <use xlink:href="#star"></use>
+                      </svg>
+                      <svg class="review__star review__star_yellow">
+                        <use xlink:href="#star"></use>
+                      </svg>
+                    </div>
+                    <p class="review__text">
+                      There is no supply of coffee at all, water flows at the
+                      junction of the connection of these parts. Tightly tie
+                      fails (closes obliquely) for the reason that stopping too
+                      long nozzle container for coffee (instructions 4)
+                    </p>
+                    <div class="review__user">
+                      <div class="review__img">
+                        <img
+                          src="img/review3img.jpg"
+                          alt=""
+                          class="review__work"
+                        />
+                        <img
+                          src="img/review1avatar.jpg"
+                          alt=""
+                          class="review__avatar"
+                        />
+                      </div>
+                      <div class="review__wrap">
+                        <p class="review__name">
+                          Jannifer
+                        </p>
+                        <p class="review__date">
+                          14 march 2019 г
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide reviews__slide">
+                  <div class="review">
+                    <div class="review__rating">
+                      <svg class="review__star review__star_yellow">
+                        <use xlink:href="#star"></use>
+                      </svg>
+                      <svg class="review__star review__star_yellow">
+                        <use xlink:href="#star"></use>
+                      </svg>
+                      <svg class="review__star review__star_yellow">
+                        <use xlink:href="#star"></use>
+                      </svg>
+                      <svg class="review__star review__star_yellow">
+                        <use xlink:href="#star"></use>
+                      </svg>
+                      <svg class="review__star review__star_yellow">
+                        <use xlink:href="#star"></use>
+                      </svg>
+                    </div>
+                    <p class="review__text">
+                      There is no supply of coffee at all, water flows at the
+                      junction of the connection of these parts. Tightly tie
+                      fails (closes obliquely) for the reason that stopping too
+                      long nozzle container for coffee (instructions 4)
+                    </p>
+                    <div class="review__user">
+                      <div class="review__img">
+                        <img
+                          src="img/review3img.jpg"
+                          alt=""
+                          class="review__work"
+                        />
+                        <img
+                          src="img/review1avatar.jpg"
+                          alt=""
+                          class="review__avatar"
+                        />
+                      </div>
+                      <div class="review__wrap">
+                        <p class="review__name">
+                          Jannifer
+                        </p>
+                        <p class="review__date">
+                          14 march 2019 г
+                        </p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
