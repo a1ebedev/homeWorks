@@ -12,15 +12,25 @@
       rel="stylesheet"
     />
     <script src="js/jquery-3.5.0.min.js"></script>
-    <script src="js/main.js"></script>
     <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link href="css/jquery.formstyler.css" rel="stylesheet" />
+    <link href="css/jquery.formstyler.theme.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/swiper.min.css" />
+    <link rel="stylesheet" href="css/slider.css">
     <link rel="stylesheet" href="css/styles.css" />
     <title>SOM</title>
   </head>
   <body>
     <!-- svg -->
     <svg width="0" height="0" class="hidden">
+      <symbol viewBox="0 0 23 23" xmlns="http://www.w3.org/2000/svg" id="close">
+        <path d="M3.061.81l19.152 19.152-2.121 2.121L.94 2.931z"></path>
+        <path d="M.94 19.962L20.09.81l2.122 2.122L3.06 22.084z"></path>
+      </symbol>
+      <symbol viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg" id="favorite">
+        <path d="M9.608 17.183h-.001c-2.617-2.374-4.709-4.275-6.158-6.048-1.438-1.76-2.138-3.27-2.138-4.842 0-2.563 1.992-4.547 4.548-4.547 1.452 0 2.863.681 3.78 1.749l.759.884.758-.884c.917-1.068 2.328-1.75 3.78-1.75 2.556 0 4.548 1.985 4.548 4.548 0 1.573-.7 3.083-2.138 4.842-1.45 1.773-3.54 3.674-6.158 6.047l-.001.001-.79.719-.789-.719z"
+          stroke="#36425B" stroke-width="2"></path>
+      </symbol>
       <symbol viewBox="0 0 21 20" xmlns="http://www.w3.org/2000/svg" id="star">
         <path
           d="M10.902 15.514l6.18 3.73-1.64-7.03 5.46-4.73-7.19-.62-2.81-6.62-2.81 6.62-7.19.62 5.45 4.73-1.63 7.03 6.18-3.73z"
@@ -62,7 +72,7 @@
     <header class="header">
       <div class="container">
         <div class="row">
-          <div class="col-lg-2">
+          <div class="col-lg-2 col-sm-2 col-xs-4">
             <div class="header__logo">
               <div class="logo">
                 <div class="logo__main">
@@ -74,7 +84,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4 col-sm-5 hidden-xs">
             <div class="header__search">
               <form action="#" class="search">
                 <input type="text" class="search__line" />
@@ -86,40 +96,124 @@
               </form>
             </div>
           </div>
-          <div class="col-lg-2">
+          <div class="col-lg-2 col-sm-2 hidden-xs">
             <div class="header__currency">
               <div class="currency">
                 <div class="currency__title">
                   Currency
                 </div>
-                <div class="currency__list">
-                  Usd
-                </div>
+                  <select class="currency__list">
+                    <option>USD</option>
+                    <option>EUR</option>
+                    <option>RUB</option>
+                    <option>CH</option>
+                    <option>EN</option>
+                  </select>
               </div>
             </div>
           </div>
-          <div class="col-lg-2 col-lg-offset-2">
+          <div class="col-lg-3 col-lg-offset-1 col-sm-3 col-xs-8">
             <div class="header__user">
-              <div class="user">
-                <a href="#" class="user__purchases">
-                  <svg class="user__basket">
+                <a href="#" class="purchases">
+                  <svg class="purchases__basket">
                     <use xlink:href="#purchases"></use>
                   </svg>
-                  <div class="user__number">
+                  <div class="purchases__number">
                     34
                   </div>
                 </a>
-                <a href="#" class="user__menu">
+               
+                <a href="#" class="user">
                   <svg class="user__icon">
                     <use xlink:href="#user"></use>
                   </svg>
                 </a>
+              <ul class="user__popup">
+                <li class="user__item"><a href="#">Посмотреть профиль</a></li>
+                <li class="user__item"><a href="#">Избранные магазины
+                  <svg class="user__favorite">
+                    <use xlink:href="#favorite"></use>
+                  </svg>
+                </a></li>
+                <li class="user__item"><a href="#">Покупки и отзывы</a></li>
+                <li class="user__item"><a href="#">Настройка аккаунта</a></li>
+                <li class="user__item"><a href="#">Выйти</a></li>
+              </ul>
+              <a href="#" class="menu">
+              </a>
+              <div class="menu__list">
+                <div class="menu__wrap">
+                  <a href="#" class="purchases">
+                    <svg class="purchases__basket">
+                      <use xlink:href="#purchases"></use>
+                    </svg>
+                    <div class="purchases__number">
+                      34
+                    </div>
+                  </a>
+                  <a href="#" class="user">
+                    <svg class="user__icon">
+                      <use xlink:href="#user"></use>
+                    </svg>
+                  </a>
+                  <div class="currency">
+                    <div>
+                      <select class="currency__list">
+                        <option>USD</option>
+                        <option>EUR</option>
+                        <option>RUB</option>
+                        <option>CH</option>
+                        <option>EN</option>
+                      </select>
+                    </div>
+                  </div>
+                  <a href="#">
+                    <svg class="menu__close">
+                      <use xlink:href="#close"></use>
+                    </svg>
+                  </a>
+
+                </div>
+                <div class="menu__wrap">
+                  <form action="#" class="search">
+                    <input type="text" class="search__line" />
+                    <button class="search__button">
+                      <svg class="search__icon">
+                        <use xlink:href="#search"></use>
+                      </svg>
+                    </button>
+                  </form>
+                </div>
+                <div class="menu__wrap">
+                  <ul class="menu__links">
+                    <li class="menu__link"><a href="#">Leather goods</a></li>
+                    <li class="menu__link"><a href="#">Wood products</a></li>
+                    <li class="menu__link"><a href="#">Wedding</a></li>
+                    <li class="menu__link"><a href="#">Happy Birthday</a></li>
+                    <li class="menu__link"><a href="#">Toys and entertainment</a></li>
+                    <li class="menu__link"><a href="#">Art objects</a></li>
+                    <li class="menu__link"><a href="#">Goods for needlework</a></li>
+                  </ul>
+                </div>
+                <div class="menu__wrap">
+                  <ul class="menu__footer">
+                    <li class="menu__footer-item">
+                      <a href="#">Store</a>
+                    </li>
+                    <li class="menu__footer-item">
+                      <a href="#">Sell</a>
+                    </li>
+                    <li class="menu__footer-item">
+                      <a href="#">About</a>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
         </div>
         <div class="row">
-          <div class="col-lg-12">
+          <div class="col-lg-12 hidden-sm hidden-xs">
             <nav>
               <div class="header__navigation">
                 <ul class="navigation">
@@ -160,29 +254,75 @@
     <main class="main">
       <div class="container">
         <div class="row">
-          <div class="col-lg-8">
-            <div class="slider right-edge">
-              <div class="slider__item">
-                <div class="slider__title">Handmade <br />sweets</div>
-                <a href="#" class="slider__button">
-                  View 456 products
-                </a>
-                <img src="img/slide1.jpg" alt="slide1" />
-              </div>
-              <ul class="slider__nav">
-                <li class="slider__dot slider__dot_select"></li>
-                <li class="slider__dot"></li>
-                <li class="slider__dot"></li>
-                <li class="slider__dot"></li>
+          <div class="col-lg-8 col-md-6 col-sm-6 col-xs-12">
+            <div class="main-slider main-slider_edge_right" id="slider">
+              <ul class="main-slider__wrap" id="slider-wrap">
+                <li class="main-slider__item" id="slider-item">
+                  <div class="main-slider__title">Handmade <br />sweets</div>
+                  <a href="#" class="main-slider__button">
+                    View 456 products
+                  </a>
+                  <div class="main-slider__picture">
+                    <img
+                    src="img/slide1.jpg"
+                    class="main-slider__img main-slider__img_edge_right"
+                    alt="slide1"
+                  />
+                  </div>
+                </li>
+                <li class="main-slider__item" id="slider-item">
+                  <div class="main-slider__title main-slider__title_color_white">Handmade <br />sweets</div>
+                  <a href="#" class="main-slider__button">
+                    View 456 products
+                  </a>
+                  <div class="main-slider__picture">
+                  <img
+                    src="img/slide2.jpg"
+                    class="main-slider__img main-slider__img_edge_right"
+                    alt="slide1"
+                  />
+                </div>
+                </li>
+                <li class="main-slider__item" id="slider-item">
+                  <div class="main-slider__title main-slider__title_color_white">Handmade <br />sweets</div>
+                  <a href="#" class="main-slider__button">
+                    View 456 products
+                  </a>
+                  <div class="main-slider__picture">
+                  <img
+                    src="img/slide3.jpg"
+                    class="main-slider__img main-slider__img_edge_right"
+                    alt="slide1"
+                  />
+                </div>
+                </li>
+                <li class="main-slider__item" id="slider-item">
+                  <div class="main-slider__title main-slider__title_color_white">Handmade <br />sweets</div>
+                  <a href="#" class="main-slider__button">
+                    View 456 products
+                  </a>
+                  <img
+                    src="img/slide4.jpg"
+                    class="main-slider__img main-slider__img_edge_right"
+                    alt="slide1"
+                  />
+                </li>
+              </ul>
+              <button class="main-slider__next">Next</button>
+              <button class="main-slider__prev">Prev</button>
+              <ul class="main-slider__nav">
               </ul>
             </div>
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
             <div class="question">
-              <div class="question__title question__title_margin_bottom">
-                Want <br />to sell <br />on SOM?
-              </div>
               <a href="#" class="question__button">Сreate a store</a>
+              <div class="question__wrap question__wrap_edge_left">
+                <div class="question__title question__title_margin_bottom">
+                  Want <br />to sell <br />on SOM?
+                </div>
+                
+              </div>
             </div>
           </div>
         </div>
@@ -191,9 +331,11 @@
     <section class="advantages">
       <div class="container">
         <div class="row">
-          <div class="col-lg-4">
+          <div class="col-lg-4 col-sm-4 col-xs-12">
             <div class="advantage">
-              <img src="img/adv-earth.svg" alt="adv-earth" />
+              <div class="advantage__picture">
+                <img src="img/adv-earth.svg" alt="adv-earth" />
+              </div>
               <div class="advantage__wrap">
                 <h3 class="advantage__title">
                   Unique everything
@@ -205,9 +347,11 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4 col-sm-4 col-xs-12">
             <div class="advantage advantage_img_margin_left">
+              <div class="advantage__picture">
               <img src="img/adv-sellers.svg" alt="adv-earth" />
+            </div>
               <div class="advantage__wrap">
                 <h3 class="advantage__title">
                   Independent sellers
@@ -219,9 +363,11 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4 col-sm-4 col-xs-12">
             <div class="advantage">
+              <div class="advantage__picture">
               <img src="img/adv-secure.svg" alt="adv-earth" />
+            </div>
               <div class="advantage__wrap">
                 <h3 class="advantage__title">
                   Secure shopping
@@ -255,94 +401,121 @@
         <div class="row">
           <div class="col-lg-12">
             <!-- Swiper -->
-            <div class="swiper-container swiper-white recent__list">
-              <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide">
-                  <div class="product-tile">
-                    <div class="product-tile__picture">
-                      <a href="#">
-                        <img src="img/product-tile1.jpg" alt="" />
-                      </a>
+            <div class="slider">
+              <div class="swiper-container swiper-white recent__list">
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide">
+                    <div class="recent__slide">
+                      <div class="product-tile">
+                        <a href="#">
+                          <img
+                            src="img/product-tile1.jpg"
+                            class="product-tile__picture product-tile__picture_edge_left"
+                            alt=""
+                          />
+                        </a>
+                        <p class="product-tile__description">
+                          Personalized dog leash hanger handmade from the base
+                        </p>
+                        <a href="#" class="product-tile__price">
+                          Sold
+                        </a>
+                      </div>
                     </div>
-                    <p class="product-tile__description">
-                      Personalized dog leash hanger handmade from the base
-                    </p>
-                    <a href="#" class="product-tile__price">
-                      Sold
-                    </a>
                   </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="product-tile">
-                    <div class="product-tile__picture">
-                      <a href="#">
-                        <img src="img/product-tile2.jpg" alt="" />
-                      </a>
+                  <div class="swiper-slide">
+                    <div class="recent__slide">
+                      <div class="product-tile">
+                        <a href="#">
+                          <img
+                            src="img/product-tile2.jpg"
+                            class="product-tile__picture product-tile__picture_edge_top"
+                            alt=""
+                          />
+                        </a>
+                        <p class="product-tile__description">
+                          Stamped pet ID tag
+                        </p>
+                        <a href="#" class="product-tile__price">$23.99</a>
+                      </div>
                     </div>
-                    <p class="product-tile__description">
-                      Stamped pet ID tag
-                    </p>
-                    <a href="#" class="product-tile__price">$23.99</a>
                   </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="product-tile">
-                    <div class="product-tile__picture">
-                      <a href="#">
-                        <img src="img/product-tile3.jpg" alt="" />
-                      </a>
+                  <div class="swiper-slide">
+                    <div class="recent__slide">
+                      <div class="product-tile">
+                        <a href="#">
+                          <img
+                            src="img/product-tile3.jpg"
+                            class="product-tile__picture product-tile__picture_edge_right"
+                            alt=""
+                          />
+                        </a>
+                        <p class="product-tile__description">
+                          Personalized Cutting Board - Engraved Cutting Board,
+                          Custom Cutting Board
+                        </p>
+                        <a href="#" class="product-tile__price">$52.00</a>
+                      </div>
                     </div>
-                    <p class="product-tile__description">
-                      Personalized Cutting Board - Engraved Cutting Board,
-                      Custom Cutting Board
-                    </p>
-                    <a href="#" class="product-tile__price">$52.00</a>
                   </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="product-tile">
-                    <div class="product-tile__picture">
-                      <a href="#">
-                        <img src="img/product-tile4.jpg" alt="" />
-                      </a>
+                  <div class="swiper-slide">
+                    <div class="recent__slide">
+                      <div class="product-tile">
+                        <a href="#">
+                          <img
+                            src="img/product-tile4.jpg"
+                            class="product-tile__picture product-tile__picture_edge_bottom"
+                            alt=""
+                          />
+                        </a>
+                        <p class="product-tile__description">
+                          Silicone Bamboo Mold, Chocolate Mold
+                        </p>
+                        <a
+                          href="#"
+                          class="product-tile__price product-tile__price_color_red"
+                        >
+                          $37.80 <span class="product-tile__discount">$45.20</span>
+                        </a>
+                      </div>
                     </div>
-                    <p class="product-tile__description">
-                      Silicone Bamboo Mold, Chocolate Mold
-                    </p>
-                    <a
-                      href="#"
-                      class="product-tile__price product-tile__price_color_red"
-                    >
-                      $37.80 <span class="product-tile__discount">$45.20</span>
-                    </a>
                   </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="product-tile">
-                    <div class="product-tile__picture">
-                      <a href="#">
-                        <img src="img/product-tile1.jpg" alt="" />
-                      </a>
+                  <div class="swiper-slide">
+                    <div class="recent__slide">
+                      <div class="product-tile">
+                        <a href="#">
+                          <img
+                            src="img/product-tile1.jpg"
+                            class="product-tile__picture"
+                            alt=""
+                          />
+                        </a>
+                        <p class="product-tile__description">
+                          Штампованная бирка удостоверения личности домашнего
+                          питомца
+                        </p>
+                        <a href="#" class="product-tile__price">$23.99</a>
+                      </div>
                     </div>
-                    <p class="product-tile__description">
-                      Штампованная бирка удостоверения личности домашнего
-                      питомца
-                    </p>
-                    <a href="#" class="product-tile__price">$23.99</a>
                   </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="product-tile">
-                    <div class="product-tile__picture">
-                      <a href="#">
-                        <img src="img/product-tile2.jpg" alt="" />
-                      </a>
+                  <div class="swiper-slide">
+                    <div class="recent__slide">
+                      <div class="product-tile">
+                        <a href="#">
+                          <img
+                            src="img/product-tile1.jpg"
+                            class="product-tile__picture"
+                            alt=""
+                          />
+                        </a>
+                        <p class="product-tile__description">
+                          Штампованная бирка удостоверения личности домашнего
+                          питомца
+                        </p>
+                        <a href="#" class="product-tile__price">$23.99</a>
+                      </div>
                     </div>
-                    <p class="product-tile__description">
-                      Personalized dog leash hanger handmade from the base
-                    </p>
-                    <a href="#" class="product-tile__price">$23.99</a>
                   </div>
                 </div>
               </div>
@@ -371,249 +544,251 @@
         <div class="row">
           <div class="col-lg-12">
             <!-- Swiper -->
-            <div class="swiper-container swiper-white reviews__list">
-              <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide reviews__slide">
-                  <div class="review">
-                    <div class="review__rating">
-                      <svg class="review__star review__star_yellow">
-                        <use xlink:href="#star"></use>
-                      </svg>
-                      <svg class="review__star review__star_yellow">
-                        <use xlink:href="#star"></use>
-                      </svg>
-                      <svg class="review__star review__star_yellow">
-                        <use xlink:href="#star"></use>
-                      </svg>
-                      <svg class="review__star review__star_yellow">
-                        <use xlink:href="#star"></use>
-                      </svg>
-                      <svg class="review__star">
-                        <use xlink:href="#star"></use>
-                      </svg>
-                    </div>
-                    <p class="review__text">
-                      I ordered a geyser coffee machine. The coffee machine is
-                      out of order. It is not possible to prepare coffee since
-                      it is not possible to close tightly
-                    </p>
-                    <div class="review__user">
-                      <div class="review__img">
-                        <img
-                          src="img/review1img.jpg"
-                          alt=""
-                          class="review__work"
-                        />
-                        <img
-                          src="img/review1avatar.jpg"
-                          alt=""
-                          class="review__avatar"
-                        />
+            <div class="slider">
+              <div class="swiper-container swiper-white reviews__list">
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide reviews__slide">
+                    <div class="review">
+                      <div class="review__rating">
+                        <svg class="review__star review__star_yellow">
+                          <use xlink:href="#star"></use>
+                        </svg>
+                        <svg class="review__star review__star_yellow">
+                          <use xlink:href="#star"></use>
+                        </svg>
+                        <svg class="review__star review__star_yellow">
+                          <use xlink:href="#star"></use>
+                        </svg>
+                        <svg class="review__star review__star_yellow">
+                          <use xlink:href="#star"></use>
+                        </svg>
+                        <svg class="review__star">
+                          <use xlink:href="#star"></use>
+                        </svg>
                       </div>
+                      <p class="review__text">
+                        I ordered a geyser coffee machine. The coffee machine is
+                        out of order. It is not possible to prepare coffee since
+                        it is not possible to close tightly
+                      </p>
                       <div class="review__wrap">
-                        <p class="review__name">
-                          Alexander
-                        </p>
-                        <p class="review__date">
-                          12 sept 2019 г
-                        </p>
+                        <div class="review__img">
+                          <img
+                            src="img/review1img.jpg"
+                            alt=""
+                            class="review__picture review__picture_edge_left"
+                          />
+                          <img
+                            src="img/review1avatar.jpg"
+                            alt=""
+                            class="review__avatar"
+                          />
+                        </div>
+                        <div class="review__user">
+                          <p class="review__name">
+                            Alexander
+                          </p>
+                          <p class="review__date">
+                            12 sept 2019 г
+                          </p>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="swiper-slide reviews__slide">
-                  <div class="review">
-                    <div class="review__rating">
-                      <svg class="review__star review__star_yellow">
-                        <use xlink:href="#star"></use>
-                      </svg>
-                      <svg class="review__star review__star_yellow">
-                        <use xlink:href="#star"></use>
-                      </svg>
-                      <svg class="review__star">
-                        <use xlink:href="#star"></use>
-                      </svg>
-                      <svg class="review__star">
-                        <use xlink:href="#star"></use>
-                      </svg>
-                      <svg class="review__star">
-                        <use xlink:href="#star"></use>
-                      </svg>
-                    </div>
-                    <p class="review__text">
-                      These are GREAT~!!! Cat was quite eager and happy to work
-                      with us on what our daughter would love. The signs were
-                      exactly what our daughter would want. Great work! Thank
-                      you so very much for your quick service and EXCELLEN
-                    </p>
-                    <div class="review__user">
-                      <div class="review__img">
-                        <img
-                          src="img/review2img.jpg"
-                          alt=""
-                          class="review__work"
-                        />
-                        <img
-                          src="img/review1avatar.jpg"
-                          alt=""
-                          class="review__avatar"
-                        />
+                  <div class="swiper-slide reviews__slide">
+                    <div class="review">
+                      <div class="review__rating">
+                        <svg class="review__star review__star_yellow">
+                          <use xlink:href="#star"></use>
+                        </svg>
+                        <svg class="review__star review__star_yellow">
+                          <use xlink:href="#star"></use>
+                        </svg>
+                        <svg class="review__star">
+                          <use xlink:href="#star"></use>
+                        </svg>
+                        <svg class="review__star">
+                          <use xlink:href="#star"></use>
+                        </svg>
+                        <svg class="review__star">
+                          <use xlink:href="#star"></use>
+                        </svg>
                       </div>
+                      <p class="review__text">
+                        These are GREAT~!!! Cat was quite eager and happy to work
+                        with us on what our daughter would love. The signs were
+                        exactly what our daughter would want. Great work! Thank
+                        you so very much for your quick service and EXCELLEN
+                      </p>
                       <div class="review__wrap">
-                        <p class="review__name">
-                          Kate
-                        </p>
-                        <p class="review__date">
-                          15 may 2019 г
-                        </p>
+                        <div class="review__img">
+                          <img
+                            src="img/review1img.jpg"
+                            alt=""
+                            class="review__picture review__picture_edge_top"
+                          />
+                          <img
+                            src="img/review1avatar.jpg"
+                            alt=""
+                            class="review__avatar"
+                          />
+                        </div>
+                        <div class="review__user">
+                          <p class="review__name">
+                            Alexander
+                          </p>
+                          <p class="review__date">
+                            12 sept 2019 г
+                          </p>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="swiper-slide reviews__slide">
-                  <div class="review">
-                    <div class="review__rating">
-                      <svg class="review__star review__star_yellow">
-                        <use xlink:href="#star"></use>
-                      </svg>
-                      <svg class="review__star review__star_yellow">
-                        <use xlink:href="#star"></use>
-                      </svg>
-                      <svg class="review__star review__star_yellow">
-                        <use xlink:href="#star"></use>
-                      </svg>
-                      <svg class="review__star review__star_yellow">
-                        <use xlink:href="#star"></use>
-                      </svg>
-                      <svg class="review__star review__star_yellow">
-                        <use xlink:href="#star"></use>
-                      </svg>
-                    </div>
-                    <p class="review__text">
-                      There is no supply of coffee at all, water flows at the
-                      junction of the connection of these parts. Tightly tie
-                      fails (closes obliquely) for the reason that stopping too
-                      long nozzle container for coffee (instructions 4)
-                    </p>
-                    <div class="review__user">
-                      <div class="review__img">
-                        <img
-                          src="img/review3img.jpg"
-                          alt=""
-                          class="review__work"
-                        />
-                        <img
-                          src="img/review1avatar.jpg"
-                          alt=""
-                          class="review__avatar"
-                        />
+                  <div class="swiper-slide reviews__slide">
+                    <div class="review">
+                      <div class="review__rating">
+                        <svg class="review__star review__star_yellow">
+                          <use xlink:href="#star"></use>
+                        </svg>
+                        <svg class="review__star review__star_yellow">
+                          <use xlink:href="#star"></use>
+                        </svg>
+                        <svg class="review__star review__star_yellow">
+                          <use xlink:href="#star"></use>
+                        </svg>
+                        <svg class="review__star review__star_yellow">
+                          <use xlink:href="#star"></use>
+                        </svg>
+                        <svg class="review__star review__star_yellow">
+                          <use xlink:href="#star"></use>
+                        </svg>
                       </div>
+                      <p class="review__text">
+                        There is no supply of coffee at all, water flows at the
+                        junction of the connection of these parts. Tightly tie
+                        fails (closes obliquely) for the reason that stopping too
+                        long nozzle container for coffee (instructions 4)
+                      </p>
                       <div class="review__wrap">
-                        <p class="review__name">
-                          Jannifer
-                        </p>
-                        <p class="review__date">
-                          14 march 2019 г
-                        </p>
+                        <div class="review__img">
+                          <img
+                            src="img/review1img.jpg"
+                            alt=""
+                            class="review__picture review__picture_edge_left"
+                          />
+                          <img
+                            src="img/review1avatar.jpg"
+                            alt=""
+                            class="review__avatar"
+                          />
+                        </div>
+                        <div class="review__user">
+                          <p class="review__name">
+                            Alexander
+                          </p>
+                          <p class="review__date">
+                            12 sept 2019 г
+                          </p>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="swiper-slide reviews__slide">
-                  <div class="review">
-                    <div class="review__rating">
-                      <svg class="review__star review__star_yellow">
-                        <use xlink:href="#star"></use>
-                      </svg>
-                      <svg class="review__star review__star_yellow">
-                        <use xlink:href="#star"></use>
-                      </svg>
-                      <svg class="review__star review__star_yellow">
-                        <use xlink:href="#star"></use>
-                      </svg>
-                      <svg class="review__star review__star_yellow">
-                        <use xlink:href="#star"></use>
-                      </svg>
-                      <svg class="review__star review__star_yellow">
-                        <use xlink:href="#star"></use>
-                      </svg>
-                    </div>
-                    <p class="review__text">
-                      There is no supply of coffee at all, water flows at the
-                      junction of the connection of these parts. Tightly tie
-                      fails (closes obliquely) for the reason that stopping too
-                      long nozzle container for coffee (instructions 4)
-                    </p>
-                    <div class="review__user">
-                      <div class="review__img">
-                        <img
-                          src="img/review3img.jpg"
-                          alt=""
-                          class="review__work"
-                        />
-                        <img
-                          src="img/review1avatar.jpg"
-                          alt=""
-                          class="review__avatar"
-                        />
+                  <div class="swiper-slide reviews__slide">
+                    <div class="review">
+                      <div class="review__rating">
+                        <svg class="review__star review__star_yellow">
+                          <use xlink:href="#star"></use>
+                        </svg>
+                        <svg class="review__star review__star_yellow">
+                          <use xlink:href="#star"></use>
+                        </svg>
+                        <svg class="review__star review__star_yellow">
+                          <use xlink:href="#star"></use>
+                        </svg>
+                        <svg class="review__star review__star_yellow">
+                          <use xlink:href="#star"></use>
+                        </svg>
+                        <svg class="review__star review__star_yellow">
+                          <use xlink:href="#star"></use>
+                        </svg>
                       </div>
+                      <p class="review__text">
+                        There is no supply of coffee at all, water flows at the
+                        junction of the connection of these parts. Tightly tie
+                        fails (closes obliquely) for the reason that stopping too
+                        long nozzle container for coffee (instructions 4)
+                      </p>
                       <div class="review__wrap">
-                        <p class="review__name">
-                          Jannifer
-                        </p>
-                        <p class="review__date">
-                          14 march 2019 г
-                        </p>
+                        <div class="review__img">
+                          <img
+                            src="img/review1img.jpg"
+                            alt=""
+                            class="review__picture review__picture_edge_top"
+                          />
+                          <img
+                            src="img/review1avatar.jpg"
+                            alt=""
+                            class="review__avatar"
+                          />
+                        </div>
+                        <div class="review__user">
+                          <p class="review__name">
+                            Alexander
+                          </p>
+                          <p class="review__date">
+                            12 sept 2019 г
+                          </p>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="swiper-slide reviews__slide">
-                  <div class="review">
-                    <div class="review__rating">
-                      <svg class="review__star review__star_yellow">
-                        <use xlink:href="#star"></use>
-                      </svg>
-                      <svg class="review__star review__star_yellow">
-                        <use xlink:href="#star"></use>
-                      </svg>
-                      <svg class="review__star review__star_yellow">
-                        <use xlink:href="#star"></use>
-                      </svg>
-                      <svg class="review__star review__star_yellow">
-                        <use xlink:href="#star"></use>
-                      </svg>
-                      <svg class="review__star review__star_yellow">
-                        <use xlink:href="#star"></use>
-                      </svg>
-                    </div>
-                    <p class="review__text">
-                      There is no supply of coffee at all, water flows at the
-                      junction of the connection of these parts. Tightly tie
-                      fails (closes obliquely) for the reason that stopping too
-                      long nozzle container for coffee (instructions 4)
-                    </p>
-                    <div class="review__user">
-                      <div class="review__img">
-                        <img
-                          src="img/review3img.jpg"
-                          alt=""
-                          class="review__work"
-                        />
-                        <img
-                          src="img/review1avatar.jpg"
-                          alt=""
-                          class="review__avatar"
-                        />
+                  <div class="swiper-slide reviews__slide">
+                    <div class="review">
+                      <div class="review__rating">
+                        <svg class="review__star review__star_yellow">
+                          <use xlink:href="#star"></use>
+                        </svg>
+                        <svg class="review__star review__star_yellow">
+                          <use xlink:href="#star"></use>
+                        </svg>
+                        <svg class="review__star review__star_yellow">
+                          <use xlink:href="#star"></use>
+                        </svg>
+                        <svg class="review__star review__star_yellow">
+                          <use xlink:href="#star"></use>
+                        </svg>
+                        <svg class="review__star review__star_yellow">
+                          <use xlink:href="#star"></use>
+                        </svg>
                       </div>
+                      <p class="review__text">
+                        There is no supply of coffee at all, water flows at the
+                        junction of the connection of these parts. Tightly tie
+                        fails (closes obliquely) for the reason that stopping too
+                        long nozzle container for coffee (instructions 4)
+                      </p>
                       <div class="review__wrap">
-                        <p class="review__name">
-                          Jannifer
-                        </p>
-                        <p class="review__date">
-                          14 march 2019 г
-                        </p>
+                        <div class="review__img">
+                          <img
+                            src="img/review1img.jpg"
+                            alt=""
+                            class="review__picture review__picture_edge_left"
+                          />
+                          <img
+                            src="img/review1avatar.jpg"
+                            alt=""
+                            class="review__avatar"
+                          />
+                        </div>
+                        <div class="review__user">
+                          <p class="review__name">
+                            Alexander
+                          </p>
+                          <p class="review__date">
+                            12 sept 2019 г
+                          </p>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -628,12 +803,17 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
-            <div class="question question_max_width">
-              <div class="question__title">
-                What is <br />
-                Seller-online ?
+            <div class="question question_horizont">
+              <a href="#" class="question__button question__button_horizont">Read more</a>
+              <div
+                class="question__wrap question__wrap_horizont question__wrap_edge_right"
+              >
+                <div class="question__title">
+                  What is <br />
+                  Seller-online ?
+                </div>
+                
               </div>
-              <a href="#" class="question__button">Read more</a>
             </div>
           </div>
         </div>
@@ -643,9 +823,9 @@
       <div class="footer__menu">
         <div class="container">
           <div class="row">
-            <div class="col-lg-3">
+            <div class="col-lg-3 col-sm-3">
               <h3 class="footer__title">
-                Store
+                <a href="#">Store</a>
               </h3>
               <ul class="footer__list">
                 <li class="footer__item">
@@ -660,9 +840,9 @@
                 </li>
               </ul>
             </div>
-            <div class="col-lg-3">
+            <div class="col-lg-3 col-sm-3">
               <h3 class="footer__title">
-                Sell
+                <a href="#">Sell</a>
               </h3>
               <ul class="footer__list">
                 <li class="footer__item">
@@ -682,9 +862,9 @@
                 </li>
               </ul>
             </div>
-            <div class="col-lg-3">
+            <div class="col-lg-3 col-sm-3">
               <h3 class="footer__title">
-                About
+                <a href="#">About</a>
               </h3>
               <ul class="footer__list">
                 <li class="footer__item">
@@ -724,9 +904,9 @@
                 </li>
               </ul>
             </div>
-            <div class="col-lg-3">
+            <div class="col-lg-3 col-sm-3">
               <h3 class="footer__title">
-                Follow SOM
+                <a href="#">Follow SOM</a>
               </h3>
               <ul class="footer__list">
                 <li class="footer__item">
@@ -757,10 +937,10 @@
       <div class="footer__copyright">
         <div class="container">
           <div class="row">
-            <div class="col-lg-7">
+            <div class="col-lg-7  col-sm-5 col-xs-12">
               <div class="footer__wrap">
                 <div class="logo">
-                  <div class="logo__main">
+                  <div class="logo__main logo__main_font_size_small">
                     S<span
                       class="logo__main_color_green logo__main_style_italic"
                       >O</span
@@ -770,7 +950,7 @@
                 <p class="footer__year">© 2019 Solma</p>
               </div>
             </div>
-            <div class="col-lg-5">
+            <div class="col-lg-5 col-sm-7 col-xs-12">
               <div class="footer__wrap footer__wrap_float_right">
                 <ul class="footer__list footer__list_inline footer__list_color">
                   <li class="footer__item">
@@ -795,6 +975,9 @@
         </div>
       </div>
     </footer>
+    <script src="js/jquery.formstyler.min.js"></script>
     <script src="js/swiper.min.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

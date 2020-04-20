@@ -1,0 +1,134 @@
+@media screen and (max-width: 1279px) {
+  .slider::after,
+  .logo__sub,
+  .slider__nav {
+    display: none;
+  }
+  .slider {
+    width: 100%;
+  }
+  .question {
+    margin: 0 -20px 0 -10px;
+    &__title {
+      font-size: 24px;
+      padding: 0 45px 0px 0;
+    }
+    &::after {
+      background-size: contain;
+      height: 222px;
+      width: 146px;
+      top: 10%;
+      right: 0%;
+    }
+    &__button_horizont {
+      top: 69%;
+      left: 0%;
+    }
+    &__wrap_horizont {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      background: $green-color;
+      color: #fff;
+      padding: 34px 119px 78px 36px;
+      position: relative;
+    }
+    &_horizont {
+      &::after {
+        background: url(../img/seller-img.svg) no-repeat;
+        height: 169px;
+        width: 289px;
+        top: 11%;
+        right: 0%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+
+  .logo__main {
+    font-size: 30px;
+  }
+  .header {
+    border-bottom: none;
+    padding: 13px 0 10px 0;
+  }
+  .header__user {
+    padding: 4px 0 0 16px;
+  }
+  .user {
+    padding: 0 28px 0 32px;
+  }
+  .menu {
+    display: block;
+    margin: 0 7px 7px 0;
+  }
+  .main {
+    padding: 0;
+  }
+
+  #slider {
+    width: 116%;
+  }
+  .main-slider {
+    margin: 0 0 0 -40px;
+    overflow: hidden;
+    &__img {
+      min-width: 100%;
+      min-height: 320px;
+      height: 320px;
+      // width: 100px;
+    }
+    &__title {
+      font-size: 24px;
+      line-height: 130%;
+      padding: 37px 0px 17px 63px;
+    }
+    &__button {
+      padding: 8px 19px;
+    }
+    &__nav {
+      top: 85%;
+    }
+    &__dot {
+      height: 6px;
+      width: 6px;
+    }
+  }
+.question {
+  &__wrap_edge_left {
+    clip-path: polygon(1% 0%, 100% -1%, 100% 100%, 0% 100%);
+  }
+}
+  .advantage {
+    margin: 0 0 0 15px;
+    & img {
+      min-width: 80px;
+    }
+    &_img_margin_left {
+      margin: 0 0 0 25px;
+    }
+  }
+
+  .swiper-slide-active {
+    margin-right: 0;
+  }
+  .slider::after,
+  .logo__sub,
+  .slider__nav {
+    display: none;
+  }
+
+  .slider {
+    width: 100%;
+  }
+  .footer__item {
+    display: none;
+  }
+  .footer__wrap {
+    margin: 0 0 0 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
